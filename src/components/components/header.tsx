@@ -1,8 +1,9 @@
 'use client';
+import { useState } from "react";
 import { useMediaQuery } from '@/hooks/use-media-query'
-import { 
-    Drawer, 
-    DrawerContent, 
+import {
+    Drawer,
+    DrawerContent,
     DrawerTrigger,
     DrawerHeader,
     DrawerTitle,
@@ -13,6 +14,11 @@ import { Button } from "../ui/button";
 
 export const Header = () => {
     const isDesktop = useMediaQuery("(min-width: 768px)");
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+    const handleLinkClick = () => {
+        setIsDrawerOpen(false);
+    };
 
     return isDesktop
     ? <header className="bg-white shadow-md sticky top-0 z-50">
@@ -54,7 +60,7 @@ export const Header = () => {
                     THERMO PURE
                 </div>
             </div>
-            <Drawer direction="right">
+            <Drawer direction="right" open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>
                 <DrawerTrigger asChild>
                     <Button variant="ghost" size="icon" className="text-gray-700">
                         <MenuIcon size={24} />
@@ -65,19 +71,19 @@ export const Header = () => {
                         <DrawerTitle className="text-center text-xl font-bold">Menu</DrawerTitle>
                     </DrawerHeader>
                     <nav className="p-6 flex flex-col space-y-4">
-                        <Link href="#presentation" className="text-lg font-medium text-gray-700 hover:text-blue-600 py-2 border-b border-gray-200">
+                        <Link href="#presentation" className="text-lg font-medium text-gray-700 hover:text-blue-600 py-2 border-b border-gray-200" onClick={handleLinkClick}>
                            Présentation
                         </Link>
-                        <Link href="#examples" className="text-lg font-medium text-gray-700 hover:text-blue-600 py-2 border-b border-gray-200">
+                        <Link href="#examples" className="text-lg font-medium text-gray-700 hover:text-blue-600 py-2 border-b border-gray-200" onClick={handleLinkClick}>
                             Exemples
                         </Link>
-                        <Link href="#devis" className="text-lg font-medium text-gray-700 hover:text-blue-600 py-2 border-b border-gray-200">
+                        <Link href="#devis" className="text-lg font-medium text-gray-700 hover:text-blue-600 py-2 border-b border-gray-200" onClick={handleLinkClick}>
                             Devis
                         </Link>
-                        <Link href="#about" className="text-lg font-medium text-gray-700 hover:text-blue-600 py-2 border-b border-gray-200">
-                            Qui sommes-nous 
+                        <Link href="#about" className="text-lg font-medium text-gray-700 hover:text-blue-600 py-2 border-b border-gray-200" onClick={handleLinkClick}>
+                            Qui sommes-nous
                         </Link>
-                        <Link href="#contact" className="text-lg font-medium text-gray-700 hover:text-blue-600 py-2 border-b border-gray-200">
+                        <Link href="#contact" className="text-lg font-medium text-gray-700 hover:text-blue-600 py-2 border-b border-gray-200" onClick={handleLinkClick}>
                             Contact
                         </Link>
                     </nav>
