@@ -1,4 +1,3 @@
-import Image from "next/image"
 
 export const ExamplesSection = () => {
     return (
@@ -28,7 +27,7 @@ export const ExamplesSection = () => {
                                 Nettoyage Façade Immeuble
                             </h3>
                             <p className="text-gray-600 mb-4">
-                                Nettoyage complet de la façade d'un immeuble de 8 étages avec traitement anti-mousse et protection.
+                                Nettoyage complet de la façade d&apos;un immeuble de 8 étages avec traitement anti-mousse et protection.
                             </p>
                             <div className="flex items-center text-sm text-gray-500">
                                 <span className="mr-4">📍 Lyon</span>
@@ -50,7 +49,7 @@ export const ExamplesSection = () => {
                                 Démoussage Toiture
                             </h3>
                             <p className="text-gray-600 mb-4">
-                                Démoussage complet d'une toiture de maison avec traitement préventif et nettoyage des gouttières.
+                                Démoussage complet d&apos;une toiture de maison avec traitement préventif et nettoyage des gouttières.
                             </p>
                             <div className="flex items-center text-sm text-gray-500">
                                 <span className="mr-4">📍 Paris</span>
@@ -72,7 +71,7 @@ export const ExamplesSection = () => {
                                 Nettoyage Murs Industriels
                             </h3>
                             <p className="text-gray-600 mb-4">
-                                Nettoyage haute pression des murs d'un entrepôt industriel avec dégraissage complet.
+                                Nettoyage haute pression des murs d&apos;un entrepôt industriel avec dégraissage complet.
                             </p>
                             <div className="flex items-center text-sm text-gray-500">
                                 <span className="mr-4">📍 Marseille</span>
@@ -94,7 +93,7 @@ export const ExamplesSection = () => {
                                 Façade Centre Commercial
                             </h3>
                             <p className="text-gray-600 mb-4">
-                                Nettoyage et remise en état de la façade d'un centre commercial avec traitement anti-graffiti.
+                                Nettoyage et remise en état de la façade d&apos;un centre commercial avec traitement anti-graffiti.
                             </p>
                             <div className="flex items-center text-sm text-gray-500">
                                 <span className="mr-4">📍 Toulouse</span>
@@ -116,7 +115,7 @@ export const ExamplesSection = () => {
                                 Nettoyage Hôpital
                             </h3>
                             <p className="text-gray-600 mb-4">
-                                Nettoyage spécialisé des murs et façades d'un établissement de santé selon normes sanitaires.
+                                Nettoyage spécialisé des murs et façades d&apos;un établissement de santé selon normes sanitaires.
                             </p>
                             <div className="flex items-center text-sm text-gray-500">
                                 <span className="mr-4">📍 Nice</span>
@@ -138,7 +137,7 @@ export const ExamplesSection = () => {
                                 Nettoyage Express
                             </h3>
                             <p className="text-gray-600 mb-4">
-                                Intervention d'urgence pour nettoyer une façade taguée avant événement important.
+                                Intervention d&apos;urgence pour nettoyer une façade taguée avant événement important.
                             </p>
                             <div className="flex items-center text-sm text-gray-500">
                                 <span className="mr-4">📍 Strasbourg</span>

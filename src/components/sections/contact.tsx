@@ -9,11 +9,11 @@ import { Mail, Phone, MapPin } from "lucide-react"
 
 export const ContactSection = () => {
     const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: ''
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: ""
     })
     const [isSubmitting, setIsSubmitting] = useState(false)
     const [submitted, setSubmitted] = useState(false)
@@ -32,10 +32,10 @@ export const ContactSection = () => {
         // Simulation d'envoi email
         await new Promise(resolve => setTimeout(resolve, 2000))
 
-        console.log('Email envoyé à contact@thermopure.fr:', formData)
+        console.log("Email envoyé à contact@thermopure.fr:", formData)
         setSubmitted(true)
         setIsSubmitting(false)
-        setFormData({ name: '', email: '', phone: '', subject: '', message: '' })
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" })
     }
 
     if (submitted) {
@@ -190,7 +190,7 @@ export const ContactSection = () => {
                                     className="w-full"
                                     disabled={isSubmitting}
                                 >
-                                    {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
+                                    {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
                                 </Button>
                             </form>
                         </CardContent>

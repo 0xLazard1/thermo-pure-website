@@ -8,7 +8,7 @@ export const PresentationSection = () => {
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
                         Spécialistes du nettoyage de façades, murs et toitures, nous redonnons éclat et propreté
-                        à vos bâtiments avec des techniques professionnelles et respectueuses de l'environnement.
+                        à vos bâtiments avec des techniques professionnelles et respectueuses de l&apos;environnement.
                     </p>
                 </div>
 

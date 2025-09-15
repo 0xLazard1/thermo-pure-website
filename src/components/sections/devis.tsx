@@ -31,7 +31,7 @@ export const DevisSection = () => {
                         </CardHeader>
                         <CardContent>
                             <p className="text-gray-600">
-                                Nous étudions vos surfaces en détail : type de matériau, niveau d'encrassement, accessibilité et budget.
+                                Nous étudions vos surfaces en détail : type de matériau, niveau d&apos;encrassement, accessibilité et budget.
                             </p>
                         </CardContent>
                     </Card>
@@ -89,7 +89,7 @@ export const DevisSection = () => {
                                 </div>
                                 <div className="flex items-center">
                                     <span className="mr-3 text-green-600">✅</span>
-                                    <span>Planning d'intervention détaillé</span>
+                                    <span>Planning d&apos;intervention détaillé</span>
                                 </div>
                             </div>
                             <div className="space-y-4">
@@ -99,7 +99,7 @@ export const DevisSection = () => {
                                 </div>
                                 <div className="flex items-center">
                                     <span className="mr-3 text-green-600">✅</span>
-                                    <span>Délais d'intervention garantis</span>
+                                    <span>Délais d&apos;intervention garantis</span>
                                 </div>
                                 <div className="flex items-center">
                                     <span className="mr-3 text-green-600">✅</span>

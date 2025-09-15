@@ -103,7 +103,7 @@ export const AboutSection = () => {
                     </Card>
                 </div>
 
-                {/* Section valeurs de l'entreprise */}
+                {/* Section valeurs de l&apos;entreprise */}
                 <div className="bg-gray-50 rounded-2xl p-8">
                     <h3 className="text-2xl font-bold text-gray-800 text-center mb-8">Nos valeurs</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
