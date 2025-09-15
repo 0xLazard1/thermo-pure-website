@@ -16,8 +16,20 @@ export const Header = () => {
     const isDesktop = useMediaQuery("(min-width: 768px)");
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-    const handleLinkClick = () => {
+    const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        const href = e.currentTarget.getAttribute('href');
         setIsDrawerOpen(false);
+
+        // Petit délai pour laisser le drawer se fermer avant de naviguer
+        setTimeout(() => {
+            if (href && href.startsWith('#')) {
+                const element = document.querySelector(href);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }, 300);
     };
 
     return isDesktop
