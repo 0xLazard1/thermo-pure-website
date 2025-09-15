@@ -95,7 +95,7 @@ export const FAQSection = () => {
                             Une autre question ?
                         </h3>
                         <p className="text-gray-600 mb-6">
-                            N'hésitez pas à nous contacter directement pour toute question spécifique à votre projet.
+                            N&apos;hésitez pas à nous contacter directement pour toute question spécifique à votre projet.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a

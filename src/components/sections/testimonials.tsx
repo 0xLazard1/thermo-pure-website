@@ -30,7 +30,7 @@ export const TestimonialsSection = () => {
                                 </div>
                             </div>
                             <blockquote className="text-gray-700 mb-4">
-                                "Excellent travail ! La façade de notre immeuble a retrouvé son éclat d&apos;origine. Service rapide et professionnel."
+                                &ldquo;Excellent travail ! La façade de notre immeuble a retrouvé son éclat d&apos;origine. Service rapide et professionnel.&rdquo;
                             </blockquote>
                             <div className="flex items-center">
                                 <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mr-4">
@@ -53,7 +53,7 @@ export const TestimonialsSection = () => {
                                 </div>
                             </div>
                             <blockquote className="text-gray-700 mb-4">
-                                "Intervention d&apos;urgence pour notre restaurant. Équipe réactive et efficace. Je recommande vivement !"
+                                &ldquo;Intervention d&apos;urgence pour notre restaurant. Équipe réactive et efficace. Je recommande vivement !&rdquo;
                             </blockquote>
                             <div className="flex items-center">
                                 <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mr-4">
@@ -76,7 +76,7 @@ export const TestimonialsSection = () => {
                                 </div>
                             </div>
                             <blockquote className="text-gray-700 mb-4">
-                                "Démoussage de toiture impeccable. Travail soigné et tarifs transparents. Très satisfaite du résultat."
+                                &ldquo;Démoussage de toiture impeccable. Travail soigné et tarifs transparents. Très satisfaite du résultat.&rdquo;
                             </blockquote>
                             <div className="flex items-center">
                                 <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mr-4">
@@ -99,7 +99,7 @@ export const TestimonialsSection = () => {
                                 </div>
                             </div>
                             <blockquote className="text-gray-700 mb-4">
-                                "Partenaire de confiance pour nos bureaux. Nettoyage régulier de qualité depuis 2 ans."
+                                &ldquo;Partenaire de confiance pour nos bureaux. Nettoyage régulier de qualité depuis 2 ans.&rdquo;
                             </blockquote>
                             <div className="flex items-center">
                                 <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center mr-4">
@@ -122,7 +122,7 @@ export const TestimonialsSection = () => {
                                 </div>
                             </div>
                             <blockquote className="text-gray-700 mb-4">
-                                "Nettoyage de façade commerciale parfait. Clients et équipes sont ravis du résultat !"
+                                &ldquo;Nettoyage de façade commerciale parfait. Clients et équipes sont ravis du résultat !&rdquo;
                             </blockquote>
                             <div className="flex items-center">
                                 <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-teal-600 rounded-full flex items-center justify-center mr-4">
@@ -145,7 +145,7 @@ export const TestimonialsSection = () => {
                                 </div>
                             </div>
                             <blockquote className="text-gray-700 mb-4">
-                                "Équipe professionnelle et matériel de qualité. Résultat au-delà de nos attentes !"
+                                &ldquo;Équipe professionnelle et matériel de qualité. Résultat au-delà de nos attentes !&rdquo;
                             </blockquote>
                             <div className="flex items-center">
                                 <div className="w-12 h-12 bg-gradient-to-br from-red-400 to-red-600 rounded-full flex items-center justify-center mr-4">
