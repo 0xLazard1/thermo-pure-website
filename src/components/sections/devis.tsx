@@ -46,7 +46,7 @@ export const DevisSection = () => {
                         </CardHeader>
                         <CardContent>
                             <p className="text-gray-600">
-                                Déplacement gratuit de nos techniciens pour évaluer l'état des surfaces et définir la méthode de nettoyage.
+                                Déplacement gratuit de nos techniciens pour évaluer l&apos;état des surfaces et définir la méthode de nettoyage.
                             </p>
                         </CardContent>
                     </Card>
@@ -77,11 +77,11 @@ export const DevisSection = () => {
                             <div className="space-y-4">
                                 <div className="flex items-center">
                                     <span className="mr-3 text-green-600">✅</span>
-                                    <span>Diagnostic complet de l'état des surfaces</span>
+                                    <span>Diagnostic complet de l&apos;état des surfaces</span>
                                 </div>
                                 <div className="flex items-center">
                                     <span className="mr-3 text-green-600">✅</span>
-                                    <span>Conseils pour l'entretien préventif</span>
+                                    <span>Conseils pour l&apos;entretien préventif</span>
                                 </div>
                                 <div className="flex items-center">
                                     <span className="mr-3 text-green-600">✅</span>

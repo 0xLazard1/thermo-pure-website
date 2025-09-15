@@ -65,7 +65,7 @@ export const ContactSection = () => {
                         Contactez-nous
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Une question ? Un projet ? N'hésitez pas à nous contacter pour un devis gratuit ou des conseils personnalisés.
+                        Une question ? Un projet ? N&apos;hésitez pas à nous contacter pour un devis gratuit ou des conseils personnalisés.
                     </p>
                 </div>
 
@@ -106,7 +106,7 @@ export const ContactSection = () => {
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-gray-600">123 Rue de l'Innovation</p>
+                                <p className="text-gray-600">123 Rue de l&apos;Innovation</p>
                                 <p className="text-gray-600">69000 Lyon, France</p>
                             </CardContent>
                         </Card>

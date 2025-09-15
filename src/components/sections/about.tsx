@@ -38,7 +38,7 @@ export const AboutSection = () => {
                                         </div>
                                     </div>
                                     <p className="text-gray-600 mb-4">
-                                        Fort de 2 ans d'expérience dans le nettoyage industriel, Tom a travaillé chez TechniToit en tant que responsable d'équipe. Ayant obtenu une vision et voulant offrir des services de nettoyage haut de gamme.
+                                        Fort de 2 ans d&apos;expérience dans le nettoyage industriel, Tom a travaillé chez TechniToit en tant que responsable d&apos;équipe. Ayant obtenu une vision et voulant offrir des services de nettoyage haut de gamme.
                                     </p>
                                 </div>
                                 <div className="space-y-2 mt-auto">
@@ -119,7 +119,7 @@ export const AboutSection = () => {
                                 <span className="text-2xl">🤝</span>
                             </div>
                             <h4 className="font-semibold text-gray-800 mb-2">Proximité</h4>
-                            <p className="text-gray-600 text-sm">Service personnalisé et à l'écoute</p>
+                            <p className="text-gray-600 text-sm">Service personnalisé et à l&apos;écoute</p>
                         </div>
                         <div className="text-center">
                             <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">

@@ -1,5 +1,4 @@
 
-import { title } from "process";
 import "./globals.css";
 
 export const metadata = {
