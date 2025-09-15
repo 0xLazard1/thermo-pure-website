@@ -5,7 +5,10 @@ import Link from "next/link"
 
 export const DevisSection = () => {
     return (
-        <section id="devis" className="min-h-screen flex items-center justify-center px-4 py-16 bg-gray-50">
+        <section id="devis" className="py-12 md:py-16 lg:py-20 bg-white relative">
+            {/* Section Separator */}
+            <div className="absolute bottom-0 left-0 right-0 h-0.5 md:h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+            <div className="max-w-6xl mx-auto px-4">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">
                     <Badge variant="secondary" className="mb-4 text-lg px-4 py-2">
@@ -132,6 +135,7 @@ export const DevisSection = () => {
                         Sans engagement • Réponse rapide • Visite gratuite
                     </p>
                 </div>
+            </div>
             </div>
         </section>
     )

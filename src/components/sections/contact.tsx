@@ -40,7 +40,8 @@ export const ContactSection = () => {
 
     if (submitted) {
         return (
-            <section id="contact" className="min-h-screen flex items-center justify-center px-4 bg-gray-50">
+            <section id="contact" className="py-12 md:py-16 lg:py-20 bg-white relative">
+            <div className="max-w-6xl mx-auto px-4 flex items-center justify-center min-h-[50vh]">
                 <Card className="max-w-md mx-auto text-center">
                     <CardContent className="pt-6">
                         <div className="text-6xl mb-4">✅</div>
@@ -53,13 +54,14 @@ export const ContactSection = () => {
                         </Button>
                     </CardContent>
                 </Card>
+            </div>
             </section>
         )
     }
 
     return (
-        <section id="contact" className="min-h-screen flex items-center justify-center px-4 py-16 bg-gray-50">
-            <div className="max-w-6xl mx-auto">
+        <section id="contact" className="py-12 md:py-16 lg:py-20 bg-white relative">
+            <div className="max-w-6xl mx-auto px-4">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                         Contactez-nous
@@ -122,7 +124,7 @@ export const ContactSection = () => {
                         </CardHeader>
                         <CardContent>
                             <form onSubmit={handleSubmit} className="space-y-4">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                                     <div>
                                         <Label htmlFor="name">Nom complet *</Label>
                                         <Input

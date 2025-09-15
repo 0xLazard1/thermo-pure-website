@@ -1,6 +1,7 @@
 import { Header } from "./header"
 import { Footer } from "./footer"
 import { Page } from "./page"
+import { ScrollToTop } from "../ui/scroll-to-top"
 
 
 export const Layout = () => {
@@ -11,6 +12,7 @@ export const Layout = () => {
                 <Page />
             </main>
             <Footer />
+            <ScrollToTop />
         </div>
     )
 }

@@ -3,7 +3,10 @@ import { Badge } from "../ui/badge"
 
 export const AboutSection = () => {
     return (
-        <section id="about" className="min-h-screen flex items-center justify-center px-4 py-16">
+        <section id="about" className="py-12 md:py-16 lg:py-20 bg-gray-50 relative">
+            {/* Section Separator */}
+            <div className="absolute bottom-0 left-0 right-0 h-0.5 md:h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+            <div className="max-w-6xl mx-auto px-4">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -18,7 +21,7 @@ export const AboutSection = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 items-stretch">
                     {/* Personne 1 */}
                     <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full">
-                        <div className="md:flex h-full">
+                        <div className="lg:flex h-full">
                             <div className="md:w-1/2">
                                 <div className="h-64 md:h-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
                                     <div className="text-white text-center">
@@ -61,7 +64,7 @@ export const AboutSection = () => {
 
                     {/* Personne 2 */}
                     <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full">
-                        <div className="md:flex h-full">
+                        <div className="lg:flex h-full">
                             <div className="md:w-1/2">
                                 <div className="h-64 md:h-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
                                     <div className="text-white text-center">
@@ -130,6 +133,7 @@ export const AboutSection = () => {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     )

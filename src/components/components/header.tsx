@@ -54,7 +54,13 @@ export const Header = () => {
                     Devis
                 </Link>
                 <Link href="#about" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
-                    Qui sommes-nous 
+                    Qui sommes-nous
+                </Link>
+                <Link href="#testimonials" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+                    Témoignages
+                </Link>
+                <Link href="#faq" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+                    FAQ
                 </Link>
                 <Link href="#contact" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
                     Contact
@@ -94,6 +100,12 @@ export const Header = () => {
                         </Link>
                         <Link href="#about" className="text-lg font-medium text-gray-700 hover:text-blue-600 py-2 border-b border-gray-200" onClick={handleLinkClick}>
                             Qui sommes-nous
+                        </Link>
+                        <Link href="#testimonials" className="text-lg font-medium text-gray-700 hover:text-blue-600 py-2 border-b border-gray-200" onClick={handleLinkClick}>
+                            Témoignages
+                        </Link>
+                        <Link href="#faq" className="text-lg font-medium text-gray-700 hover:text-blue-600 py-2 border-b border-gray-200" onClick={handleLinkClick}>
+                            FAQ
                         </Link>
                         <Link href="#contact" className="text-lg font-medium text-gray-700 hover:text-blue-600 py-2 border-b border-gray-200" onClick={handleLinkClick}>
                             Contact

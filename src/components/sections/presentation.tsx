@@ -1,6 +1,8 @@
 export const PresentationSection = () => {
     return (
-        <section id="presentation" className="min-h-screen flex items-center justify-center px-4 bg-gradient-to-br from-blue-50 to-white">
+        <section id="presentation" className="min-h-screen flex items-center justify-center px-4 py-12 md:py-16 lg:py-20 bg-gradient-to-br from-blue-50 to-white relative">
+            {/* Section Separator */}
+            <div className="absolute bottom-0 left-0 right-0 h-0.5 md:h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">

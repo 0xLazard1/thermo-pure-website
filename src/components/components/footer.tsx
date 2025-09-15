@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
         <footer className="bg-gray-900 text-white py-8">
             <div className="max-w-6xl mx-auto px-4">
-                <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
 
                     {/* Logo/Company */}
                     <div className="text-xl font-bold">
