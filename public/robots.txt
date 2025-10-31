@@ -1,0 +1,18 @@
+# Robots.txt for THERMO PURE
+# https://www.thermopure.fr
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.thermopure.fr/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 0
+
+# Block specific bots (optional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

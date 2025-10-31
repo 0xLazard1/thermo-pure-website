@@ -3,26 +3,26 @@ import { Badge } from "../ui/badge"
 
 export const TestimonialsSection = () => {
     return (
-        <section id="testimonials" className="py-12 md:py-16 lg:py-20 bg-white relative">
+        <section id="testimonials" className="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-white via-green-50/30 to-white relative">
             {/* Section Separator */}
-            <div className="absolute bottom-0 left-0 right-0 h-0.5 md:h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-0.5 md:h-px bg-gradient-to-r from-transparent via-green-200 to-transparent"></div>
             <div className="max-w-6xl mx-auto px-4">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">
-                    <Badge variant="secondary" className="mb-4 text-lg px-4 py-2">
+                    <Badge variant="secondary" className="mb-4 text-lg px-4 py-2 bg-green-100 text-green-700 hover:bg-green-200">
                         ⭐ Témoignages Clients
                     </Badge>
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-green-700 to-green-600 bg-clip-text text-transparent mb-6">
                         Ils nous font confiance
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
                         Découvrez les retours de nos clients satisfaits qui ont fait appel à nos services de nettoyage professionnel.
                     </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* Témoignage 1 */}
-                    <Card className="bg-white hover:shadow-xl transition-shadow duration-300 border-l-4 border-blue-500">
+                    <Card className="bg-white hover:shadow-2xl transition-all duration-300 border-l-4 border-green-500 hover:-translate-y-1">
                         <CardContent className="p-6">
                             <div className="flex items-center mb-4">
                                 <div className="flex text-yellow-400">
@@ -45,7 +45,7 @@ export const TestimonialsSection = () => {
                     </Card>
 
                     {/* Témoignage 2 */}
-                    <Card className="bg-white hover:shadow-xl transition-shadow duration-300 border-l-4 border-green-500">
+                    <Card className="bg-white hover:shadow-2xl transition-all duration-300 border-l-4 border-emerald-500 hover:-translate-y-1">
                         <CardContent className="p-6">
                             <div className="flex items-center mb-4">
                                 <div className="flex text-yellow-400">
@@ -68,7 +68,7 @@ export const TestimonialsSection = () => {
                     </Card>
 
                     {/* Témoignage 3 */}
-                    <Card className="bg-white hover:shadow-xl transition-shadow duration-300 border-l-4 border-purple-500">
+                    <Card className="bg-white hover:shadow-2xl transition-all duration-300 border-l-4 border-teal-500 hover:-translate-y-1">
                         <CardContent className="p-6">
                             <div className="flex items-center mb-4">
                                 <div className="flex text-yellow-400">
@@ -91,7 +91,7 @@ export const TestimonialsSection = () => {
                     </Card>
 
                     {/* Témoignage 4 */}
-                    <Card className="bg-white hover:shadow-xl transition-shadow duration-300 border-l-4 border-orange-500">
+                    <Card className="bg-white hover:shadow-2xl transition-all duration-300 border-l-4 border-lime-500 hover:-translate-y-1">
                         <CardContent className="p-6">
                             <div className="flex items-center mb-4">
                                 <div className="flex text-yellow-400">
@@ -114,7 +114,7 @@ export const TestimonialsSection = () => {
                     </Card>
 
                     {/* Témoignage 5 */}
-                    <Card className="bg-white hover:shadow-xl transition-shadow duration-300 border-l-4 border-teal-500">
+                    <Card className="bg-white hover:shadow-2xl transition-all duration-300 border-l-4 border-green-600 hover:-translate-y-1">
                         <CardContent className="p-6">
                             <div className="flex items-center mb-4">
                                 <div className="flex text-yellow-400">
@@ -137,7 +137,7 @@ export const TestimonialsSection = () => {
                     </Card>
 
                     {/* Témoignage 6 */}
-                    <Card className="bg-white hover:shadow-xl transition-shadow duration-300 border-l-4 border-red-500">
+                    <Card className="bg-white hover:shadow-2xl transition-all duration-300 border-l-4 border-emerald-600 hover:-translate-y-1">
                         <CardContent className="p-6">
                             <div className="flex items-center mb-4">
                                 <div className="flex text-yellow-400">
@@ -161,23 +161,23 @@ export const TestimonialsSection = () => {
                 </div>
 
                 {/* Statistiques */}
-                <div className="mt-16 bg-blue-50 rounded-2xl p-8">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                        <div>
-                            <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
-                            <p className="text-gray-600">Clients satisfaits</p>
+                <div className="mt-16 bg-gradient-to-br from-green-50 to-white rounded-3xl p-10 border-2 border-green-100 shadow-lg">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                        <div className="group">
+                            <div className="text-4xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">500+</div>
+                            <p className="text-gray-700 font-medium">Clients satisfaits</p>
                         </div>
-                        <div>
-                            <div className="text-3xl font-bold text-blue-600 mb-2">98%</div>
-                            <p className="text-gray-600">Taux de satisfaction</p>
+                        <div className="group">
+                            <div className="text-4xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">98%</div>
+                            <p className="text-gray-700 font-medium">Taux de satisfaction</p>
                         </div>
-                        <div>
-                            <div className="text-3xl font-bold text-blue-600 mb-2">1000+</div>
-                            <p className="text-gray-600">Interventions réalisées</p>
+                        <div className="group">
+                            <div className="text-4xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">1000+</div>
+                            <p className="text-gray-700 font-medium">Interventions réalisées</p>
                         </div>
-                        <div>
-                            <div className="text-3xl font-bold text-blue-600 mb-2">5⭐</div>
-                            <p className="text-gray-600">Note moyenne</p>
+                        <div className="group">
+                            <div className="text-4xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">5⭐</div>
+                            <p className="text-gray-700 font-medium">Note moyenne</p>
                         </div>
                     </div>
                 </div>

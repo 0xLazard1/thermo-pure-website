@@ -60,13 +60,13 @@ export const ContactSection = () => {
     }
 
     return (
-        <section id="contact" className="py-12 md:py-16 lg:py-20 bg-white relative">
+        <section id="contact" className="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-white via-green-50/30 to-white relative">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-green-700 to-green-600 bg-clip-text text-transparent mb-6">
                         Contactez-nous
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
                         Une question ? Un projet ? N&apos;hésitez pas à nous contacter pour un devis gratuit ou des conseils personnalisés.
                     </p>
                 </div>
@@ -74,10 +74,10 @@ export const ContactSection = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {/* Informations de contact */}
                     <div className="space-y-6">
-                        <Card>
+                        <Card className="border-2 border-green-100 hover:border-green-300 hover:shadow-lg transition-all duration-300">
                             <CardHeader>
                                 <CardTitle className="flex items-center gap-2">
-                                    <Mail className="text-blue-600" size={24} />
+                                    <Mail className="text-green-600" size={24} />
                                     Email
                                 </CardTitle>
                             </CardHeader>
@@ -87,7 +87,7 @@ export const ContactSection = () => {
                             </CardContent>
                         </Card>
 
-                        <Card>
+                        <Card className="border-2 border-green-100 hover:border-green-300 hover:shadow-lg transition-all duration-300">
                             <CardHeader>
                                 <CardTitle className="flex items-center gap-2">
                                     <Phone className="text-green-600" size={24} />
@@ -100,24 +100,27 @@ export const ContactSection = () => {
                             </CardContent>
                         </Card>
 
-                        <Card>
+                        <Card className="border-2 border-green-100 hover:border-green-300 hover:shadow-lg transition-all duration-300">
                             <CardHeader>
                                 <CardTitle className="flex items-center gap-2">
-                                    <MapPin className="text-red-600" size={24} />
+                                    <MapPin className="text-green-600" size={24} />
                                     Adresse
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-gray-600">123 Rue de l&apos;Innovation</p>
-                                <p className="text-gray-600">69000 Lyon, France</p>
+                                <p className="text-gray-600">Zone d&apos;intervention</p>
+                                <p className="text-gray-600">Niort et Deux-Sèvres (79)</p>
+                                <p className="text-sm text-gray-500 mt-2">
+                                    Départements voisins : 17, 85, 86
+                                </p>
                             </CardContent>
                         </Card>
                     </div>
 
                     {/* Formulaire de contact */}
-                    <Card>
+                    <Card className="border-2 border-green-100 shadow-lg">
                         <CardHeader>
-                            <CardTitle>Envoyez-nous un message</CardTitle>
+                            <CardTitle className="text-green-700">Envoyez-nous un message</CardTitle>
                             <CardDescription>
                                 Remplissez le formulaire ci-dessous et nous vous répondrons rapidement.
                             </CardDescription>

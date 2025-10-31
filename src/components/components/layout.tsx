@@ -2,6 +2,7 @@ import { Header } from "./header"
 import { Footer } from "./footer"
 import { Page } from "./page"
 import { ScrollToTop } from "../ui/scroll-to-top"
+import { StickyCtaMobile } from "../ui/sticky-cta-mobile"
 
 
 export const Layout = () => {
@@ -13,6 +14,7 @@ export const Layout = () => {
             </main>
             <Footer />
             <ScrollToTop />
+            <StickyCtaMobile />
         </div>
     )
 }
