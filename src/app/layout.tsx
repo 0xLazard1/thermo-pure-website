@@ -1,6 +1,9 @@
 
 import "./globals.css";
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'], display: 'swap' })
 
 export const metadata: Metadata = {
   title: 'THERMO PURE - Nettoyage Façades, Toitures & Drone à Niort (79) - Deux-Sèvres',
@@ -49,7 +52,7 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://www.thermopure.fr" />
       </head>
-      <body>
+      <body className={inter.className}>
         <main>{children}</main>
       </body>
     </html>

@@ -43,7 +43,7 @@ export const StructuredData = () => {
             "ratingValue": "5",
             "reviewCount": "500"
         },
-        "description": "Spécialistes du nettoyage de façades, murs et toitures par drone à Niort et Deux-Sèvres. Intervention Charente-Maritime, Vendée, Vienne.",
+        "description": "Spécialiste du nettoyage extérieur à la vapeur basse pression : toitures, façades, mobilier urbain et tout type d'extérieur à Niort et Nouvelle-Aquitaine.",
         "areaServed": [
             {
                 "@type": "State",
@@ -94,8 +94,8 @@ export const StructuredData = () => {
                     "@type": "Offer",
                     "itemOffered": {
                         "@type": "Service",
-                        "name": "Nettoyage par Drone",
-                        "description": "Nettoyage innovant de façades et toitures par drone, sans échafaudage"
+                        "name": "Imperméabilisation",
+                        "description": "Imperméabilisation de toitures, façades et terrasses avec produit hydrofuge garantie jusqu'à 10 ans"
                     }
                 }
             ]

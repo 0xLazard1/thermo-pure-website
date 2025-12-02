@@ -67,7 +67,7 @@ export const FAQSection = () => {
                         <div key={index} className="bg-gray-50 rounded-lg border">
                             <button
                                 onClick={() => toggleFAQ(index)}
-                                className="w-full px-6 py-4 text-left flex items-center justify-between text-base font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset rounded-lg"
+                                className="w-full px-6 py-4 text-left flex items-center justify-between text-base font-semibold text-gray-800 hover:text-sky-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-inset rounded-lg"
                             >
                                 <span>{faq.question}</span>
                                 <ChevronDown
@@ -90,7 +90,7 @@ export const FAQSection = () => {
                 </div>
 
                 <div className="mt-12 text-center">
-                    <div className="bg-blue-50 rounded-2xl p-8">
+                    <div className="bg-sky-50 rounded-2xl p-8">
                         <h3 className="text-2xl font-bold text-gray-900 mb-4">
                             Une autre question ?
                         </h3>
@@ -100,13 +100,13 @@ export const FAQSection = () => {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a
                                 href="tel:+33123456789"
-                                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
+                                className="bg-sky-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sky-700 transition-colors duration-200"
                             >
                                 📞 Appelez-nous
                             </a>
                             <a
                                 href="#contact"
-                                className="bg-white text-blue-600 border border-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200"
+                                className="bg-white text-sky-600 border border-sky-600 px-6 py-3 rounded-lg font-semibold hover:bg-sky-50 transition-colors duration-200"
                             >
                                 ✉️ Écrivez-nous
                             </a>

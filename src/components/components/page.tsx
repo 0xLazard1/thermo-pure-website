@@ -5,7 +5,6 @@ import { DroneInnovationSection } from "../sections/drone-innovation"
 import { AboutSection } from "../sections/about"
 import { ExamplesSection } from "../sections/examples"
 import { DevisSection } from "../sections/devis"
-import { TestimonialsSection } from "../sections/testimonials"
 import { FAQSection } from "../sections/faq-fixed"
 import { ContactSection } from "../sections/contact"
 
@@ -15,22 +14,16 @@ export const Page = () => {
             {/* 1. Hero Section - Accroche principale avec CTA */}
             <HeroSection />
 
-            {/* 1.5 Trust Badges - Réassurance immédiate */}
-            <TrustBadgesSection />
+            {/* 1.5 Vidéo - Démonstration du nettoyage */}
+            <ExamplesSection />
 
             {/* 2. Présentation - Les 4 services */}
             <PresentationSection />
 
-            {/* 3. Témoignages - Preuves sociales IMMÉDIATEMENT */}
-            <TestimonialsSection />
-
-            {/* 4. Innovation Drone - Section dédiée à votre différenciateur */}
+            {/* 3. Nettoyage Vapeur Basse Pression - Section dédiée à votre différenciateur */}
             <DroneInnovationSection />
 
-            {/* 5. Exemples - Résultats concrets */}
-            <ExamplesSection />
-
-            {/* 6. Devis - CTA quand l'intérêt est maximum */}
+            {/* 4. Devis - CTA quand l'intérêt est maximum */}
             <DevisSection />
 
             {/* 7. À propos - Humaniser après avoir convaincu */}

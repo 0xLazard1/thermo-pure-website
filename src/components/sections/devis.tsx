@@ -18,8 +18,7 @@ export const DevisSection = () => {
                         Obtenez votre devis personnalisé
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-                        Évaluation gratuite et sans engagement. Nos experts analysent vos surfaces
-                        pour vous proposer la méthode de nettoyage la plus adaptée.
+                        Diagnostic gratuit et sans engagement : nous analysons vos surfaces pour vous proposer la solution de nettoyage à la vapeur la plus sûre et la plus performante.
                     </p>
                 </div>
 
@@ -27,14 +26,14 @@ export const DevisSection = () => {
                     {/* Étape 1 */}
                     <Card className="text-center hover:shadow-lg transition-shadow duration-300">
                         <CardHeader>
-                            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <div className="w-16 h-16 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <span className="text-3xl">📋</span>
                             </div>
                             <CardTitle className="text-xl">1. Analyse des besoins</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <p className="text-gray-600">
-                                Nous étudions vos surfaces en détail : type de matériau, niveau d&apos;encrassement, accessibilité et budget.
+                                Nous étudions vos surfaces en détail : type de matériaux, degré d&apos;encrassement, accessibilité et points singuliers (abergements de cheminée, faîtage, tuiles gelées, etc.).
                             </p>
                         </CardContent>
                     </Card>
@@ -42,14 +41,14 @@ export const DevisSection = () => {
                     {/* Étape 2 */}
                     <Card className="text-center hover:shadow-lg transition-shadow duration-300">
                         <CardHeader>
-                            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <span className="text-3xl">🏠</span>
                             </div>
                             <CardTitle className="text-xl">2. Visite technique</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <p className="text-gray-600">
-                                Déplacement gratuit de nos techniciens pour évaluer l&apos;état des surfaces et définir la méthode de nettoyage.
+                                Déplacement gratuit de nos techniciens pour évaluer l&apos;état des surfaces et définir la méthode de nettoyage, ainsi que les mesures de prévention et de sécurité du chantier.
                             </p>
                         </CardContent>
                     </Card>
@@ -57,14 +56,14 @@ export const DevisSection = () => {
                     {/* Étape 3 */}
                     <Card className="text-center hover:shadow-lg transition-shadow duration-300">
                         <CardHeader>
-                            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <div className="w-16 h-16 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <span className="text-3xl">💰</span>
                             </div>
                             <CardTitle className="text-xl">3. Devis détaillé</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <p className="text-gray-600">
-                                Proposition complète avec détail des techniques de nettoyage, produits utilisés, délais et tarifs.
+                                Proposition complète avec détail du nettoyage à la vapeur basse pression, durée prévisionnelle du chantier, délais d&apos;intervention et tarifs.
                             </p>
                         </CardContent>
                     </Card>
@@ -78,39 +77,31 @@ export const DevisSection = () => {
                     <CardContent>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="space-y-4">
-                                <div className="flex items-center">
-                                    <span className="mr-3 text-green-600">✅</span>
-                                    <span>Diagnostic complet de l&apos;état des surfaces</span>
+                                <div className="flex items-start">
+                                    <span className="mr-3 text-sky-600 flex-shrink-0 mt-1">✅</span>
+                                    <span>Diagnostic technique complet de l&apos;état des surfaces (matériaux, encrassement, points singuliers).</span>
                                 </div>
-                                <div className="flex items-center">
-                                    <span className="mr-3 text-green-600">✅</span>
-                                    <span>Conseils pour l&apos;entretien préventif</span>
+                                <div className="flex items-start">
+                                    <span className="mr-3 text-sky-600 flex-shrink-0 mt-1">✅</span>
+                                    <span>Choix de la méthode de nettoyage à la vapeur basse pression la plus adaptée à chaque support.</span>
                                 </div>
-                                <div className="flex items-center">
-                                    <span className="mr-3 text-green-600">✅</span>
-                                    <span>Choix des techniques adaptées</span>
-                                </div>
-                                <div className="flex items-center">
-                                    <span className="mr-3 text-green-600">✅</span>
-                                    <span>Planning d&apos;intervention détaillé</span>
+                                <div className="flex items-start">
+                                    <span className="mr-3 text-sky-600 flex-shrink-0 mt-1">✅</span>
+                                    <span>Vérification des accès et des moyens de sécurité à mettre en place (toiture, hauteur, alentours…).</span>
                                 </div>
                             </div>
                             <div className="space-y-4">
-                                <div className="flex items-center">
-                                    <span className="mr-3 text-green-600">✅</span>
-                                    <span>Information sur les traitements préventifs</span>
+                                <div className="flex items-start">
+                                    <span className="mr-3 text-sky-600 flex-shrink-0 mt-1">✅</span>
+                                    <span>Planning d&apos;intervention détaillé.</span>
                                 </div>
-                                <div className="flex items-center">
-                                    <span className="mr-3 text-green-600">✅</span>
-                                    <span>Délais d&apos;intervention garantis</span>
+                                <div className="flex items-start">
+                                    <span className="mr-3 text-sky-600 flex-shrink-0 mt-1">✅</span>
+                                    <span>Garantie de résultat immédiat.</span>
                                 </div>
-                                <div className="flex items-center">
-                                    <span className="mr-3 text-green-600">✅</span>
-                                    <span>Garantie de résultat</span>
-                                </div>
-                                <div className="flex items-center">
-                                    <span className="mr-3 text-green-600">✅</span>
-                                    <span>Service après-vente inclus</span>
+                                <div className="flex items-start">
+                                    <span className="mr-3 text-sky-600 flex-shrink-0 mt-1">✅</span>
+                                    <span>Service après-vente inclus.</span>
                                 </div>
                             </div>
                         </div>
