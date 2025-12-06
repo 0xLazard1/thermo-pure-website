@@ -14,17 +14,11 @@ export const HeroSection = () => {
                 style={{backgroundImage: 'url(/hero-bg.jpg)'}}
             >
                 {/* Overlay pour meilleure lisibilité du texte */}
-                <div className="absolute inset-0 bg-gradient-to-t from-sky-900/60 via-sky-800/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-sky-900/70 via-sky-800/45 to-sky-900/20"></div>
             </div>
 
             {/* Contenu Principal */}
             <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 text-center">
-                {/* Badge Innovation */}
-                <div className="inline-flex items-center gap-2 bg-sky-500/20 backdrop-blur-sm border border-sky-300/40 rounded-full px-6 py-2 mb-6 animate-fade-in">
-                    <span className="text-2xl">💨</span>
-                    <span className="text-white font-semibold">Nettoyage vapeur basse pression spécialisé en extérieur</span>
-                </div>
-
                 {/* Titre Principal */}
                 <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
                     Nettoyage de Toitures & Façades
@@ -62,16 +56,12 @@ export const HeroSection = () => {
                 {/* Trust Badges */}
                 <div className="flex flex-wrap justify-center gap-6 text-white/80 text-sm">
                     <div className="flex items-center gap-2">
-                        <span className="text-yellow-300 text-xl">⭐⭐⭐⭐⭐</span>
-                        <span>5/5 sur 500+ avis</span>
+                        <span className="text-cyan-300 text-xl">📍</span>
+                        <span>Deux-Sèvre 79, 16, 17, 86</span>
                     </div>
                     <div className="flex items-center gap-2">
                         <span className="text-cyan-300 text-xl">🛡️</span>
                         <span>Assuré & Certifié</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <span className="text-cyan-300 text-xl">📍</span>
-                        <span>Deux-Sèvres & Régions voisines</span>
                     </div>
                 </div>
 

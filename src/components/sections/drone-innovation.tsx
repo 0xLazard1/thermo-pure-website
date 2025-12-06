@@ -9,10 +9,6 @@ export const DroneInnovationSection = () => {
             <div className="max-w-6xl mx-auto px-4 relative z-10">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <div className="inline-flex items-center gap-2 bg-sky-500/20 backdrop-blur-sm border border-sky-300/40 rounded-full px-6 py-2 mb-6">
-                        <span className="text-3xl">💨</span>
-                        <span className="font-semibold">Procédé innovant</span>
-                    </div>
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
                         Nettoyage vapeur basse pression
                         <br />
@@ -115,16 +111,7 @@ export const DroneInnovationSection = () => {
                         >
                             📋 Demander un Devis
                         </a>
-                        <a
-                            href="tel:+33671558027"
-                            className="inline-flex items-center justify-center gap-3 px-10 py-5 text-lg font-bold text-white bg-sky-600/20 backdrop-blur-sm border-2 border-white hover:bg-white hover:text-sky-900 rounded-full transition-all duration-300 hover:scale-105"
-                        >
-                            📞 Poser une question
-                        </a>
                     </div>
-                    <p className="text-sm text-sky-200 mt-4">
-                        ⚡ Réponse sous 2h • 🎁 Devis gratuit • 💨 Spécialiste vapeur basse pression
-                    </p>
                 </div>
             </div>
         </section>

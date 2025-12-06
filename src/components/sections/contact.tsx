@@ -95,7 +95,7 @@ export const ContactSection = () => {
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-gray-600">01 23 45 67 89</p>
+                                <p className="text-gray-600">06 71 55 80 27</p>
                                 <p className="text-sm text-gray-500 mt-1">Lun-Ven 8h-18h</p>
                             </CardContent>
                         </Card>

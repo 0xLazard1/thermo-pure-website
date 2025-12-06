@@ -51,9 +51,6 @@ export const Header = () => {
                 <Link href="#about" className="text-gray-700 hover:text-emerald-600 font-medium transition-all duration-200 hover:scale-105">
                     Qui sommes-nous
                 </Link>
-                <Link href="#testimonials" className="text-gray-700 hover:text-emerald-600 font-medium transition-all duration-200 hover:scale-105">
-                    Témoignages
-                </Link>
                 <Link href="#faq" className="text-gray-700 hover:text-emerald-600 font-medium transition-all duration-200 hover:scale-105">
                     FAQ
                 </Link>
@@ -90,9 +87,6 @@ export const Header = () => {
                         </Link>
                         <Link href="#about" className="text-lg font-medium text-gray-700 hover:text-emerald-600 py-3 border-b border-emerald-100 transition-colors" onClick={handleLinkClick}>
                             Qui sommes-nous
-                        </Link>
-                        <Link href="#testimonials" className="text-lg font-medium text-gray-700 hover:text-emerald-600 py-3 border-b border-emerald-100 transition-colors" onClick={handleLinkClick}>
-                            Témoignages
                         </Link>
                         <Link href="#faq" className="text-lg font-medium text-gray-700 hover:text-emerald-600 py-3 border-b border-emerald-100 transition-colors" onClick={handleLinkClick}>
                             FAQ

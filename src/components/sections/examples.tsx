@@ -22,6 +22,14 @@ const carouselImages = [
     {
         id: 5,
         src: "/Image_Nettoyage_5.jpg",
+    },
+    {
+        id: 6,
+        src: "/Image_Nettoyage_6.jpg",
+    },
+    {
+        id: 7,
+        src: "/Image_Nettoyage_7.jpg",
     }
 ]
 
@@ -70,6 +78,8 @@ export const ExamplesSection = () => {
                             <video
                                 className="w-full h-auto"
                                 controls
+                                autoPlay
+                                muted
                                 poster="/test.mp4"
                             >
                                 <source src="/test.mp4" type="video/mp4" />
@@ -79,16 +89,27 @@ export const ExamplesSection = () => {
                     </div>
                 </div>
 
+                {/* Text Section between Video and Carousel */}
+                <div className="text-center mb-16">
+                    <h3 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-sky-700 to-sky-600 bg-clip-text text-transparent mb-6">
+                        Découvrez nos réalisations
+                    </h3>
+                    <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                        Parcourez notre galerie de projets réalisés. Chaque intervention témoigne de notre expertise en nettoyage vapeur basse pression pour toitures, façades et terrasses dans toute la Nouvelle-Aquitaine.
+                    </p>
+                </div>
+
                 {/* Carousel Section - Exemples */}
                 <div className="relative">
                     {/* Main Image - Full Size with Enhanced Styling */}
                     <div className="flex justify-center mb-8">
-                        <div className="group bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-sky-200 hover:border-sky-400 transition-all duration-300 w-full max-w-4xl">
-                            <div className="relative w-full bg-gray-100 overflow-hidden h-96 flex items-center justify-center">
+                        <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl overflow-hidden w-full max-w-4xl">
+                            <div className="relative w-full bg-gradient-to-br from-gray-100 to-gray-50 overflow-hidden flex items-center justify-center p-4" style={{minHeight: '400px'}}>
                                 <img
                                     src={currentImage.src}
                                     alt={`Exemple ${currentIndex + 1}`}
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                    className="w-full h-auto object-contain rounded-lg"
+                                    style={{maxHeight: '600px'}}
                                 />
                             </div>
                         </div>

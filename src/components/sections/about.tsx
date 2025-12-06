@@ -48,13 +48,13 @@ export const AboutSection = () => {
                     {/* Personne 2 */}
                     <div>
                         <div className="mb-4">
-                            <h3 className="text-2xl font-bold text-gray-800 mb-2">Adrien Hubert</h3>
+                            <h3 className="text-2xl font-bold text-gray-800 mb-2">Adrian Hubert</h3>
                             <div className="h-8 flex items-start">
                                 <Badge variant="secondary">Co-Gérant</Badge>
                             </div>
                         </div>
                         <p className="text-gray-600 mb-4">
-                            Diplômé en BTS travaux, Adrien gère la relation client et le développement commercial. Passionné par la satisfaction client, il assure le suivi personnalisé de chaque projet.
+                            Diplômé en BTS travaux, Adrian met son expertise au service de la relation client et du développement commercial de THERMO PURE. Garant d&apos;un accompagnement personnalisé, il assure le suivi de chaque projet, de l&apos;étude du besoin jusqu&apos;à la livraison, afin de proposer des prestations de nettoyage sur-mesure et durables.
                         </p>
                         <div className="space-y-2">
                             <div className="flex items-center text-sm text-gray-500">

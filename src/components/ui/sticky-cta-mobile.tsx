@@ -79,20 +79,9 @@ export const StickyCtaMobile = () => {
 
             {/* Version Desktop - CTA Flottant coin droit */}
             <div className="hidden lg:block fixed bottom-8 right-8 z-50 space-y-3 animate-slide-up">
-                {/* Bouton Téléphone */}
-                <a
-                    href="tel:+33671558027"
-                    className="group flex items-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-105"
-                >
-                    <Phone className="w-5 h-5 animate-pulse" />
-                    <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300">
-                        Appeler
-                    </span>
-                </a>
-
                 {/* Bouton Devis */}
                 <a
-                    href="#devis"
+                    href="#contact"
                     className="group flex items-center gap-3 bg-white hover:bg-gray-50 text-emerald-600 font-bold px-6 py-4 rounded-full shadow-2xl border-2 border-emerald-600 transition-all duration-300 hover:scale-105"
                 >
                     <FileText className="w-5 h-5" />

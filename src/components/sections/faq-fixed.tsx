@@ -17,10 +17,6 @@ const faqData = [
         answer: "La durée dépend de la taille de la surface, du niveau d'encrassement et du type de traitement nécessaire. Généralement, comptez une journée pour une maison individuelle standard et 2-3 jours pour un petit immeuble. Nous vous fournirons un planning précis lors du devis."
     },
     {
-        question: "Proposez-vous un traitement anti-mousse ?",
-        answer: "Oui, nous proposons des traitements préventifs anti-mousse et anti-lichen après le nettoyage. Ces traitements permettent de prolonger la propreté de vos surfaces et de réduire la fréquence des interventions. Durée d'efficacité : 2 à 3 ans selon l'exposition."
-    },
-    {
         question: "Intervenez-vous en urgence ?",
         answer: "Oui, nous proposons un service d'intervention d'urgence pour les professionnels (restaurants, commerces, bureaux) qui ont besoin d'un nettoyage rapide. Contactez-nous directement par téléphone pour vérifier nos disponibilités et obtenir un devis express."
     },
@@ -51,15 +47,9 @@ export const FAQSection = () => {
             <div className="absolute bottom-0 left-0 right-0 h-0.5 md:h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
             <div className="max-w-4xl mx-auto px-4">
                 <div className="text-center mb-16">
-                    <Badge variant="secondary" className="mb-4 text-lg px-4 py-2">
-                        ❓ Questions Fréquentes
-                    </Badge>
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                         Vos questions, nos réponses
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                        Retrouvez les réponses aux questions les plus fréquemment posées concernant nos services de nettoyage.
-                    </p>
                 </div>
 
                 <div className="space-y-3">
@@ -87,31 +77,6 @@ export const FAQSection = () => {
                             </div>
                         </div>
                     ))}
-                </div>
-
-                <div className="mt-12 text-center">
-                    <div className="bg-sky-50 rounded-2xl p-8">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                            Une autre question ?
-                        </h3>
-                        <p className="text-gray-600 mb-6">
-                            N&apos;hésitez pas à nous contacter directement pour toute question spécifique à votre projet.
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a
-                                href="tel:+33123456789"
-                                className="bg-sky-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sky-700 transition-colors duration-200"
-                            >
-                                📞 Appelez-nous
-                            </a>
-                            <a
-                                href="#contact"
-                                className="bg-white text-sky-600 border border-sky-600 px-6 py-3 rounded-lg font-semibold hover:bg-sky-50 transition-colors duration-200"
-                            >
-                                ✉️ Écrivez-nous
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
