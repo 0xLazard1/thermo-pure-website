@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export const PresentationSection = () => {
     return (
         <section id="presentation" className="min-h-screen flex items-center justify-center px-4 py-12 md:py-16 lg:py-20 bg-gradient-to-br from-sky-50 via-white to-sky-50/30 relative">
@@ -22,9 +24,11 @@ export const PresentationSection = () => {
                     <div className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-sky-100 hover:border-sky-300 relative">
                         <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-sky-600 to-sky-400"></div>
                         <div className="relative h-48 overflow-hidden">
-                            <img
+                            <Image
                                 src="/Image_Nettoyage_3.jpg"
                                 alt="Nettoyage de toiture à la vapeur"
+                                width={400}
+                                height={300}
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
                         </div>
@@ -40,9 +44,11 @@ export const PresentationSection = () => {
                     <div className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-sky-100 hover:border-sky-300 relative">
                         <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-sky-500 to-sky-400"></div>
                         <div className="relative h-48 overflow-hidden">
-                            <img
+                            <Image
                                 src="/Image_Façade_Presentation.jpg"
                                 alt="Nettoyage de façade à la vapeur"
+                                width={400}
+                                height={300}
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
                         </div>
@@ -58,9 +64,11 @@ export const PresentationSection = () => {
                     <div className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-sky-100 hover:border-sky-300 relative">
                         <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-sky-400 to-cyan-400"></div>
                         <div className="relative h-48 overflow-hidden">
-                            <img
+                            <Image
                                 src="/Image_Terrace_Presentation.png"
                                 alt="Nettoyage de terrasse à la vapeur"
+                                width={400}
+                                height={300}
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
                         </div>

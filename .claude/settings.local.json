@@ -8,7 +8,8 @@
       "Bash(find:*)",
       "Bash(ls:*)",
       "Bash(node optimize-images.js:*)",
-      "Bash(test:*)"
+      "Bash(test:*)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []

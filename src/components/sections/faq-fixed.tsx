@@ -1,6 +1,5 @@
 'use client'
 import { useState } from "react"
-import { Badge } from "../ui/badge"
 import { ChevronDown } from "lucide-react"
 
 const faqData = [

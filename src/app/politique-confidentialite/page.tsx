@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Politique de Confidentialité - THERMO PURE',
@@ -17,7 +18,7 @@ export default function PolitiqueConfidentialitePage() {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <img src="/logo.jpg" alt="THERMO PURE" className="h-12 w-auto rounded-lg" />
+            <Image src="/logo.jpg" alt="THERMO PURE" width={48} height={48} className="h-12 w-auto rounded-lg" />
             <span className="text-xl font-bold text-sky-700">THERMO PURE</span>
           </Link>
           <Link
@@ -40,7 +41,7 @@ export default function PolitiqueConfidentialitePage() {
           <section>
             <div className="bg-sky-50 border-l-4 border-sky-600 p-6 rounded-r-lg">
               <p className="text-gray-800 leading-relaxed">
-                THERMO PURE s'engage à protéger la confidentialité de vos données personnelles. Cette politique vous informe sur la manière dont nous collectons, utilisons et protégeons vos informations conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés.
+                THERMO PURE s’engage à protéger la confidentialité de vos données personnelles. Cette politique vous informe sur la manière dont nous collectons, utilisons et protégeons vos informations conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés.
               </p>
             </div>
           </section>
@@ -109,7 +110,7 @@ export default function PolitiqueConfidentialitePage() {
             </p>
             <ul className="list-disc list-inside text-gray-700 ml-4 space-y-2 mt-4">
               <li><strong>Votre consentement</strong> : en remplissant le formulaire de contact</li>
-              <li><strong>L'exécution d'un contrat</strong> : pour établir un devis et réaliser une prestation</li>
+              <li><strong>L&apos;exécution d&apos;un contrat</strong> : pour établir un devis et réaliser une prestation</li>
               <li><strong>Notre intérêt légitime</strong> : pour améliorer nos services</li>
             </ul>
           </section>
@@ -128,7 +129,7 @@ export default function PolitiqueConfidentialitePage() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-sky-600 mr-2">•</span>
-                  <span><strong>Prestataires techniques</strong> : Resend (service d'envoi d'emails) et Hostinger (hébergement du site)</span>
+                  <span><strong>Prestataires techniques</strong> : Resend (service d&apos;envoi d&apos;emails) et Hostinger (hébergement du site)</span>
                 </li>
               </ul>
             </div>
@@ -148,7 +149,7 @@ export default function PolitiqueConfidentialitePage() {
               <li>Les données nécessaires à la comptabilité sont conservées 10 ans conformément aux obligations légales</li>
             </ul>
             <p className="text-gray-700 leading-relaxed mt-4">
-              À l'issue de cette période, vos données sont supprimées de manière sécurisée.
+              À l&apos;issue de cette période, vos données sont supprimées de manière sécurisée.
             </p>
           </section>
 
@@ -163,7 +164,7 @@ export default function PolitiqueConfidentialitePage() {
                 <li className="flex items-start">
                   <span className="text-sky-600 mr-2 text-xl">→</span>
                   <div>
-                    <strong className="text-gray-900">Droit d'accès :</strong>
+                    <strong className="text-gray-900">Droit d&apos;accès :</strong>
                     <span className="text-gray-700"> obtenir une copie de vos données</span>
                   </div>
                 </li>
@@ -177,14 +178,14 @@ export default function PolitiqueConfidentialitePage() {
                 <li className="flex items-start">
                   <span className="text-sky-600 mr-2 text-xl">→</span>
                   <div>
-                    <strong className="text-gray-900">Droit à l'effacement :</strong>
+                    <strong className="text-gray-900">Droit à l&apos;effacement :</strong>
                     <span className="text-gray-700"> demander la suppression de vos données</span>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <span className="text-sky-600 mr-2 text-xl">→</span>
                   <div>
-                    <strong className="text-gray-900">Droit d'opposition :</strong>
+                    <strong className="text-gray-900">Droit d&apos;opposition :</strong>
                     <span className="text-gray-700"> vous opposer au traitement de vos données</span>
                   </div>
                 </li>
@@ -212,12 +213,12 @@ export default function PolitiqueConfidentialitePage() {
                 <li>📞 Par téléphone : <a href="tel:+33671558027" className="text-sky-600 hover:text-sky-700 font-medium">06 71 55 80 27</a></li>
               </ul>
               <p className="text-sm text-gray-600 mt-4">
-                Nous nous engageons à répondre à votre demande dans un délai maximum d'un mois.
+                Nous nous engageons à répondre à votre demande dans un délai maximum d&apos;un mois.
               </p>
             </div>
 
             <p className="text-gray-700 leading-relaxed mt-4">
-              Vous avez également le droit d'introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:text-sky-700 font-medium">CNIL (Commission Nationale de l'Informatique et des Libertés)</a>.
+              Vous avez également le droit d&apos;introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:text-sky-700 font-medium">CNIL (Commission Nationale de l&apos;Informatique et des Libertés)</a>.
             </p>
           </section>
 
@@ -228,7 +229,7 @@ export default function PolitiqueConfidentialitePage() {
               Nous mettons en œuvre toutes les mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre :
             </p>
             <ul className="list-disc list-inside text-gray-700 ml-4 space-y-2">
-              <li>L'accès non autorisé</li>
+              <li>L&apos;accès non autorisé</li>
               <li>La modification, divulgation ou destruction non autorisée</li>
               <li>La perte accidentelle</li>
             </ul>
@@ -247,7 +248,7 @@ export default function PolitiqueConfidentialitePage() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Cookies</h2>
             <p className="text-gray-700 leading-relaxed">
-              Ce site n'utilise pas de cookies de tracking, publicitaires ou analytiques. Seuls des cookies techniques strictement nécessaires au fonctionnement du site peuvent être utilisés (ex: cookies de session).
+              Ce site n&apos;utilise pas de cookies de tracking, publicitaires ou analytiques. Seuls des cookies techniques strictement nécessaires au fonctionnement du site peuvent être utilisés (ex: cookies de session).
             </p>
           </section>
 
@@ -289,7 +290,7 @@ export default function PolitiqueConfidentialitePage() {
             href="/"
             className="inline-flex items-center px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-sky-600 to-sky-500 hover:from-sky-700 hover:to-sky-600 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform"
           >
-            ← Retour à l'accueil
+            ← Retour à l&apos;accueil
           </Link>
         </div>
       </main>

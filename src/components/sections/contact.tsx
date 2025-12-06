@@ -120,14 +120,14 @@ export const ContactSection = () => {
                             <CardHeader>
                                 <CardTitle className="flex items-center gap-2">
                                     <MapPin className="text-emerald-600" size={24} />
-                                    Zone d'intervention
+                                    Zone d&apos;intervention
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
                           
                                 <p className="text-gray-600">Nouvelle-Aquitaine</p>
                                 <p className="text-sm text-gray-500 mt-2">
-                                    Départements voisins : 17, 85, 86
+                                    Départements voisins :  79, 17, 85, 86
                                 </p>
                             </CardContent>
                         </Card>

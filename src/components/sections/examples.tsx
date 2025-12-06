@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import Image from 'next/image'
 
 const carouselImages = [
     {
@@ -106,9 +107,11 @@ export const ExamplesSection = () => {
                         {/* Main Image - Full Size with Enhanced Styling */}
                         <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl overflow-hidden w-full max-w-4xl order-2 md:order-2">
                             <div className="relative w-full bg-gradient-to-br from-gray-100 to-gray-50 overflow-hidden flex items-center justify-center p-3 sm:p-4 min-h-[250px] sm:min-h-[300px] md:min-h-[400px]">
-                                <img
+                                <Image
                                     src={currentImage.src}
                                     alt={`Exemple ${currentIndex + 1}`}
+                                    width={800}
+                                    height={600}
                                     className="w-full h-auto object-contain rounded-lg max-h-[250px] sm:max-h-[400px] md:max-h-[600px]"
                                 />
                             </div>

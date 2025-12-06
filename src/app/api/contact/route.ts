@@ -17,7 +17,7 @@ export async function POST(request: Request) {
     }
 
     // Envoi de l'email
-    const { data, error } = await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: 'Thermo Pure <contact@thermo-pure.com>', // Utilise votre domaine vérifié sur Resend
       to: ['contact@thermo-pure.com'],
       replyTo: email,

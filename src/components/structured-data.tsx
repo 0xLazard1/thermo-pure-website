@@ -3,21 +3,22 @@ export const StructuredData = () => {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "THERMO PURE",
-        "image": "https://www.thermopure.fr/logo.png",
-        "url": "https://www.thermopure.fr",
-        "telephone": "+33-1-23-45-67-89",
+        "image": "https://www.thermo-pure.com/logo.jpg",
+        "url": "https://www.thermo-pure.com",
+        "telephone": "+33671558027",
         "email": "contact@thermo-pure.com",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Niort",
-            "addressRegion": "Deux-Sèvres",
-            "postalCode": "79000",
+            "streetAddress": "60 rue François Ier",
+            "addressLocality": "Paris",
+            "addressRegion": "Île-de-France",
+            "postalCode": "75008",
             "addressCountry": "FR"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 46.3236,
-            "longitude": -0.4597
+            "latitude": 48.8698,
+            "longitude": 2.3079
         },
         "priceRange": "€€",
         "openingHoursSpecification": [
@@ -28,22 +29,20 @@ export const StructuredData = () => {
                     "Tuesday",
                     "Wednesday",
                     "Thursday",
-                    "Friday"
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
                 ],
                 "opens": "08:00",
-                "closes": "18:00"
+                "closes": "20:00"
             }
         ],
         "sameAs": [
             "https://www.facebook.com/thermopure",
-            "https://www.instagram.com/thermopure"
+            "https://www.instagram.com/thermopure",
+            "https://www.tiktok.com/@thermopure"
         ],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "reviewCount": "500"
-        },
-        "description": "Spécialiste du nettoyage extérieur à la vapeur basse pression : toitures, façades, mobilier urbain et tout type d'extérieur à Niort et Nouvelle-Aquitaine.",
+        "description": "Spécialiste du nettoyage extérieur à la vapeur basse pression : toitures, façades, terrasses et tout type d'extérieur. Intervention en Nouvelle-Aquitaine et départements voisins (79, 17, 85, 86).",
         "areaServed": [
             {
                 "@type": "State",
@@ -86,16 +85,8 @@ export const StructuredData = () => {
                     "@type": "Offer",
                     "itemOffered": {
                         "@type": "Service",
-                        "name": "Nettoyage de Murs",
-                        "description": "Traitement spécialisé des murs intérieurs et extérieurs"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Imperméabilisation",
-                        "description": "Imperméabilisation de toitures, façades et terrasses avec produit hydrofuge garantie jusqu'à 10 ans"
+                        "name": "Nettoyage de Terrasses & Extérieurs",
+                        "description": "Nettoyage de terrasses, allées, cours et espaces extérieurs à la vapeur basse pression"
                     }
                 }
             ]
@@ -110,19 +101,19 @@ export const StructuredData = () => {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Accueil",
-                "item": "https://www.thermopure.fr"
+                "item": "https://www.thermo-pure.com"
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Services",
-                "item": "https://www.thermopure.fr#presentation"
+                "item": "https://www.thermo-pure.com#presentation"
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Contact",
-                "item": "https://www.thermopure.fr#contact"
+                "item": "https://www.thermo-pure.com#contact"
             }
         ]
     }

@@ -1,6 +1,5 @@
 import { HeroSection } from "../sections/hero"
 import { PresentationSection } from "../sections/presentation"
-import { TrustBadgesSection } from "../sections/trust-badges"
 import { DroneInnovationSection } from "../sections/drone-innovation"
 import { AboutSection } from "../sections/about"
 import { ExamplesSection } from "../sections/examples"

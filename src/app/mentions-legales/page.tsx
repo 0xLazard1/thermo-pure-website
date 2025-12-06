@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Mentions Légales - THERMO PURE',
@@ -17,7 +18,7 @@ export default function MentionsLegalesPage() {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <img src="/logo.jpg" alt="THERMO PURE" className="h-12 w-auto rounded-lg" />
+            <Image src="/logo.jpg" alt="THERMO PURE" width={48} height={48} className="h-12 w-auto rounded-lg" />
             <span className="text-xl font-bold text-sky-700">THERMO PURE</span>
           </Link>
           <Link
@@ -64,10 +65,10 @@ export default function MentionsLegalesPage() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Propriété intellectuelle</h2>
             <p className="text-gray-700 leading-relaxed">
-              L'ensemble du contenu de ce site (textes, images, vidéos, logo, charte graphique, etc.) est la propriété exclusive de THERMO PURE, sauf mention contraire.
+              L&apos;ensemble du contenu de ce site (textes, images, vidéos, logo, charte graphique, etc.) est la propriété exclusive de THERMO PURE, sauf mention contraire.
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">
-              Toute reproduction, distribution, modification, adaptation, retransmission ou publication de ces différents éléments est strictement interdite sans l'accord écrit préalable de THERMO PURE.
+              Toute reproduction, distribution, modification, adaptation, retransmission ou publication de ces différents éléments est strictement interdite sans l&apos;accord écrit préalable de THERMO PURE.
             </p>
           </section>
 
@@ -75,7 +76,7 @@ export default function MentionsLegalesPage() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Données personnelles</h2>
             <p className="text-gray-700 leading-relaxed">
-              Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition aux données personnelles vous concernant.
+              Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d&apos;un droit d&apos;accès, de rectification, de suppression et d&apos;opposition aux données personnelles vous concernant.
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">
               Pour exercer ces droits, vous pouvez nous contacter :
@@ -85,7 +86,7 @@ export default function MentionsLegalesPage() {
               <li>Par téléphone : <a href="tel:+33671558027" className="text-sky-600 hover:text-sky-700">06 71 55 80 27</a></li>
             </ul>
             <p className="text-gray-700 leading-relaxed mt-4">
-              Pour plus d'informations, consultez notre <Link href="/politique-confidentialite" className="text-sky-600 hover:text-sky-700 font-medium">Politique de confidentialité</Link>.
+              Pour plus d&apos;informations, consultez notre <Link href="/politique-confidentialite" className="text-sky-600 hover:text-sky-700 font-medium">Politique de confidentialité</Link>.
             </p>
           </section>
 
@@ -93,7 +94,7 @@ export default function MentionsLegalesPage() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Cookies</h2>
             <p className="text-gray-700 leading-relaxed">
-              Ce site n'utilise pas de cookies de tracking ou de publicité. Seuls des cookies techniques strictement nécessaires au fonctionnement du site peuvent être utilisés.
+              Ce site n&apos;utilise pas de cookies de tracking ou de publicité. Seuls des cookies techniques strictement nécessaires au fonctionnement du site peuvent être utilisés.
             </p>
           </section>
 
@@ -101,10 +102,10 @@ export default function MentionsLegalesPage() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Limitation de responsabilité</h2>
             <p className="text-gray-700 leading-relaxed">
-              THERMO PURE s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, THERMO PURE ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur ce site.
+              THERMO PURE s&apos;efforce d&apos;assurer l&apos;exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, THERMO PURE ne peut garantir l&apos;exactitude, la précision ou l&apos;exhaustivité des informations mises à disposition sur ce site.
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">
-              THERMO PURE ne pourra être tenue responsable des dommages directs ou indirects qui pourraient résulter de l'accès au site ou de l'utilisation du site et de ses informations.
+              THERMO PURE ne pourra être tenue responsable des dommages directs ou indirects qui pourraient résulter de l&apos;accès au site ou de l&apos;utilisation du site et de ses informations.
             </p>
           </section>
 
@@ -112,7 +113,7 @@ export default function MentionsLegalesPage() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Droit applicable et juridiction</h2>
             <p className="text-gray-700 leading-relaxed">
-              Les présentes mentions légales sont régies par le droit français. En cas de litige et à défaut d'accord amiable, le litige sera porté devant les tribunaux français conformément aux règles de compétence en vigueur.
+              Les présentes mentions légales sont régies par le droit français. En cas de litige et à défaut d&apos;accord amiable, le litige sera porté devant les tribunaux français conformément aux règles de compétence en vigueur.
             </p>
           </section>
 
@@ -130,7 +131,7 @@ export default function MentionsLegalesPage() {
             href="/"
             className="inline-flex items-center px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-sky-600 to-sky-500 hover:from-sky-700 hover:to-sky-600 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform"
           >
-            ← Retour à l'accueil
+            ← Retour à l&apos;accueil
           </Link>
         </div>
       </main>

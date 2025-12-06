@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Mail } from "lucide-react";
 
 export const Footer = () => {
@@ -10,7 +11,7 @@ export const Footer = () => {
                     {/* Colonne 1 - À propos */}
                     <div>
                         <div className="flex items-center space-x-3 mb-4">
-                            <img src="/logo.jpg" alt="THERMO PURE Logo" className="h-12 w-auto" />
+                            <Image src="/logo.jpg" alt="THERMO PURE Logo" width={48} height={48} className="h-12 w-auto" />
                             <h3 className="text-xl font-bold bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent">
                                 THERMO PURE
                             </h3>
