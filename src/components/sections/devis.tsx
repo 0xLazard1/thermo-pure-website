@@ -22,6 +22,7 @@ export const DevisSection = () => {
                     {/* Étape 1 */}
                     <Card className="text-center hover:shadow-lg transition-shadow duration-300">
                         <CardHeader>
+                            <div className="text-4xl mb-3">🔍</div>
                             <CardTitle className="text-lg sm:text-xl">1. Analyse des besoins</CardTitle>
                         </CardHeader>
                         <CardContent>
@@ -34,6 +35,7 @@ export const DevisSection = () => {
                     {/* Étape 2 */}
                     <Card className="text-center hover:shadow-lg transition-shadow duration-300">
                         <CardHeader>
+                            <div className="text-4xl mb-3">🏠</div>
                             <CardTitle className="text-lg sm:text-xl">2. Visite technique</CardTitle>
                         </CardHeader>
                         <CardContent>
@@ -46,6 +48,7 @@ export const DevisSection = () => {
                     {/* Étape 3 */}
                     <Card className="text-center hover:shadow-lg transition-shadow duration-300">
                         <CardHeader>
+                            <div className="text-4xl mb-3">📋</div>
                             <CardTitle className="text-lg sm:text-xl">3. Devis détaillé</CardTitle>
                         </CardHeader>
                         <CardContent>

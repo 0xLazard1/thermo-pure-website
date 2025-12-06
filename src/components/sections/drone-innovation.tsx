@@ -89,7 +89,7 @@ export const DroneInnovationSection = () => {
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-12">
                     <div className="text-center">
                         <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-cyan-300 mb-2">3x</div>
-                        <p className="text-sm sm:text-base text-sky-100">plus rapide</p>
+                        <p className="text-sm sm:text-base text-sky-100">moins d&apos;eau</p>
                     </div>
                     <div className="text-center">
                         <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-cyan-300 mb-2">100%</div>
@@ -97,7 +97,7 @@ export const DroneInnovationSection = () => {
                     </div>
                     <div className="text-center">
                         <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-cyan-300 mb-2">0</div>
-                        <p className="text-sm sm:text-base text-sky-100">échafaudage</p>
+                        <p className="text-sm sm:text-base text-sky-100">produit chimique</p>
                     </div>
                 </div>
 

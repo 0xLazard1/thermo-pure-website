@@ -98,8 +98,8 @@ export const ContactSection = () => {
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-gray-600">contact@thermopure.fr</p>
-                                <p className="text-sm text-gray-500 mt-1">Réponse sous 24h</p>
+                                <p className="text-gray-600">contact@thermo-pure.com</p>
+                                <p className="text-sm text-gray-500 mt-1">Réponse sous 2 heures</p>
                             </CardContent>
                         </Card>
 
@@ -112,7 +112,7 @@ export const ContactSection = () => {
                             </CardHeader>
                             <CardContent>
                                 <p className="text-gray-600">06 71 55 80 27</p>
-                                <p className="text-sm text-gray-500 mt-1">Lun-Ven 8h-18h</p>
+                                <p className="text-sm text-gray-500 mt-1">7j/7 8h-20h</p>
                             </CardContent>
                         </Card>
 
@@ -120,12 +120,12 @@ export const ContactSection = () => {
                             <CardHeader>
                                 <CardTitle className="flex items-center gap-2">
                                     <MapPin className="text-emerald-600" size={24} />
-                                    Adresse
+                                    Zone d'intervention
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-gray-600">Zone d&apos;intervention</p>
-                                <p className="text-gray-600">Niort et Deux-Sèvres (79)</p>
+                          
+                                <p className="text-gray-600">Nouvelle-Aquitaine</p>
                                 <p className="text-sm text-gray-500 mt-2">
                                     Départements voisins : 17, 85, 86
                                 </p>

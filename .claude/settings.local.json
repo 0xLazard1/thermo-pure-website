@@ -7,7 +7,8 @@
       "Bash(npm install:*)",
       "Bash(find:*)",
       "Bash(ls:*)",
-      "Bash(node optimize-images.js:*)"
+      "Bash(node optimize-images.js:*)",
+      "Bash(test:*)"
     ],
     "deny": [],
     "ask": []

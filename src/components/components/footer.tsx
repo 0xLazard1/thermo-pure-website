@@ -19,7 +19,7 @@ export const Footer = () => {
                             Spécialistes du nettoyage de façades, murs et toitures. Service professionnel et respectueux de l&apos;environnement.
                         </p>
                         <div className="flex space-x-4">
-                            <Link href="mailto:contact@thermopure.fr" className="hover:text-emerald-300 transition-all duration-300 hover:scale-110 transform">
+                            <Link href="mailto:contact@thermo-pure.com" className="hover:text-emerald-300 transition-all duration-300 hover:scale-110 transform">
                                 <Mail size={24} />
                             </Link>
                             <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-300 transition-all duration-300 hover:scale-110 transform">
@@ -76,12 +76,12 @@ export const Footer = () => {
                             <p>RCS Paris 991 013 038</p>
                             <p>TVA : FR87991013038</p>
                             <p className="pt-2">
-                                <Link href="#" className="hover:text-emerald-300 transition-colors underline">
+                                <Link href="/mentions-legales" className="hover:text-emerald-300 transition-colors underline">
                                     Mentions légales
                                 </Link>
                             </p>
                             <p>
-                                <Link href="#" className="hover:text-emerald-300 transition-colors underline">
+                                <Link href="/politique-confidentialite" className="hover:text-emerald-300 transition-colors underline">
                                     Politique de confidentialité
                                 </Link>
                             </p>

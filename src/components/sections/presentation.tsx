@@ -7,7 +7,7 @@ export const PresentationSection = () => {
                 <div className="text-center mb-16 animate-fade-in">
                     <h2 className="text-4xl md:text-6xl font-bold">
                         <span className="text-sky-700">THERMO</span>
-                        <span className="text-sky-600"> PURE</span>
+                        <span className="text-green-600"> PURE</span>
                     </h2>
                     <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto mb-4 leading-relaxed mt-4">
                         Spécialiste du nettoyage extérieur à la vapeur : toitures, façades, mobilier urbain et tout type d&apos;extérieur.

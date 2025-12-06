@@ -27,7 +27,7 @@ export const HeroSection = () => {
 
                 {/* Sous-titre */}
                 <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-sky-100 mb-4 max-w-3xl mx-auto">
-                    Spécialiste du nettoyage extérieur doux et efficace dans toute la Nouvelle-Aquitaine : toitures, façades, terrasses…
+                    Expert en nettoyage extérieur performant et respectueux des matériaux en Nouvelle-Aquitaine : toiture, façade, terrasse…
                 </p>
 
 
@@ -54,7 +54,7 @@ export const HeroSection = () => {
                 <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 text-white/80 text-sm">
                     <div className="flex items-center gap-2">
                         <span className="text-cyan-300 text-xl">📍</span>
-                        <span>Deux-Sèvre 79, 16, 17, 86</span>
+                        <span>Nouvelle-Aquitaine 79, 16, 17, 86</span>
                     </div>
                     <div className="flex items-center gap-2">
                         <span className="text-cyan-300 text-xl">🛡️</span>

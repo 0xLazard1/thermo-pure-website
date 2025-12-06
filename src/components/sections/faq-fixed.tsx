@@ -6,15 +6,15 @@ import { ChevronDown } from "lucide-react"
 const faqData = [
     {
         question: "Quels types de surfaces pouvez-vous nettoyer ?",
-        answer: "Nous intervenons sur tous types de surfaces : façades en crépi, pierre, brique, métal, toitures en tuiles, ardoise, fibrociment, terrasses, cours, murs extérieurs et intérieurs. Nous adaptons nos techniques selon le matériau pour garantir un résultat optimal."
+        answer: "Nous intervenons sur tous types de surfaces : façades en crépi, pierre, brique, bac acier, tuiles terre cuite, béton, ardoise, fibrociment non amianté, terrasses, cours, murs extérieurs et intérieurs. Nous adaptons nos techniques selon les matériaux pour garantir un résultat optimal."
     },
     {
-        question: "Le nettoyage haute pression peut-il endommager ma façade ?",
-        answer: "Non, nous utilisons des équipements professionnels avec réglage de pression adapté à chaque surface. Nos techniciens sont formés pour identifier le bon niveau de pression et la distance appropriée pour nettoyer efficacement sans abîmer vos revêtements."
+        question: "Le nettoyeur vapeur basse pression peut-il endommager ma façade ?",
+        answer: "Non, nous utilisons des équipements professionnels avec réglage de pression  et de température adapté à chaque surface. Nos techniciens sont formés pour identifier le bon niveau de pression et la distance appropriée pour nettoyer efficacement sans abîmer vos revêtements. (Nous travaillons maximum à 70 bars de pression )"
     },
     {
         question: "Combien de temps faut-il pour nettoyer une façade ?",
-        answer: "La durée dépend de la taille de la surface, du niveau d'encrassement et du type de traitement nécessaire. Généralement, comptez une journée pour une maison individuelle standard et 2-3 jours pour un petit immeuble. Nous vous fournirons un planning précis lors du devis."
+        answer: "La durée dépend de la taille de la surface, du niveau d'encrassement et du type de traitement nécessaire, ainsi que de l'accessibilité"
     },
     {
         question: "Intervenez-vous en urgence ?",
@@ -26,11 +26,13 @@ const faqData = [
     },
     {
         question: "Êtes-vous assurés et certifiés ?",
-        answer: "Oui, nous sommes entièrement assurés (responsabilité civile professionnelle et décennale) et nos techniciens sont formés aux techniques de nettoyage professionnel. Nous respectons toutes les normes de sécurité et utilisons des équipements certifiés."
+        answer: "Oui, nous sommes entièrement assurés (responsabilité civile professionnelle) et nos techniciens sont formés aux techniques de nettoyage professionnel. Nous respectons toutes les normes de sécurité et utilisons des équipements certifiés. "
     },
     {
-        question: "Quelle est la meilleure période pour nettoyer sa façade ?",
-        answer: "Le printemps et l'automne sont les périodes idéales : températures douces, moins de pollen et conditions météo stables. Nous intervenons toute l'année sauf en cas de gel ou de pluie intense. Un nettoyage tous les 2-3 ans est généralement suffisant."
+        question: "Quelle est la meilleure période pour nettoyer votre patrimoine ?",
+        answer: "Il n’existe pas de saison spécifique pour entretenir votre toiture : un entretien régulier et efficace est nécessaire toute l’année afin de prévenir les dégradations importantes causées par les conditions climatiques, notamment hivernales."
+
+
     }
 ]
 

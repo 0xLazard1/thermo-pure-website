@@ -6,7 +6,7 @@ export const StructuredData = () => {
         "image": "https://www.thermopure.fr/logo.png",
         "url": "https://www.thermopure.fr",
         "telephone": "+33-1-23-45-67-89",
-        "email": "contact@thermopure.fr",
+        "email": "contact@thermo-pure.com",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Niort",

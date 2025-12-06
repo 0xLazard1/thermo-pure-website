@@ -11,8 +11,7 @@ export const AboutSection = () => {
                         Qui sommes nous ?
                     </h2>
                     <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                        Une entreprise dirigée par deux associés passionnés par la propreté et la valorisation du patrimoine bâti.
-                        Découvrez les gérants qui ont créé THERMO PURE.
+                        Derrière THERMO PURE : deux entrepreneurs passionnés qui ont fait de la propreté et de la valorisation des bâtiments leur métier et leur engagement.
                     </p>
                 </div>
 
@@ -58,11 +57,11 @@ export const AboutSection = () => {
                         <div className="space-y-2">
                             <div className="flex items-center text-sm text-gray-500">
                                 <span className="mr-2">🎓</span>
-                                <span>BTS dans le Bâtiment</span>
+                                <span>BTS Bâtiment & Génie Civil</span>
                             </div>
                             <div className="flex items-center text-sm text-gray-500">
                                 <span className="mr-2">🏆</span>
-                                <span>Certification CQP Propreté</span>
+                                <span>Formation travail en hauteur – R408</span>
                             </div>
                             <div className="flex items-center text-sm text-gray-500">
                                 <span className="mr-2">📞</span>
