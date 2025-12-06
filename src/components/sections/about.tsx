@@ -6,7 +6,6 @@ export const AboutSection = () => {
             {/* Section Separator */}
             <div className="absolute bottom-0 left-0 right-0 h-0.5 md:h-px bg-gradient-to-r from-transparent via-sky-200 to-transparent"></div>
             <div className="max-w-6xl mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-sky-700 to-sky-600 bg-clip-text text-transparent mb-6">
                         Qui sommes nous ?
@@ -72,7 +71,6 @@ export const AboutSection = () => {
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
     )

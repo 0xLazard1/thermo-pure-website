@@ -3,7 +3,11 @@
     "allow": [
       "Bash(npm run dev:*)",
       "Bash(git -C /Users/lazard/Desktop/thermo-pure-website log --oneline -20)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(npm install:*)",
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(node optimize-images.js:*)"
     ],
     "deny": [],
     "ask": []

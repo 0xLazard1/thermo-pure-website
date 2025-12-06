@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   authors: [{ name: 'THERMO PURE' }],
   creator: 'THERMO PURE',
   publisher: 'THERMO PURE',
+  icons: {
+    icon: '/logo.jpg',
+    shortcut: '/logo.jpg',
+    apple: '/logo.jpg',
+  },
   robots: {
     index: true,
     follow: true,
@@ -29,11 +34,13 @@ export const metadata: Metadata = {
     title: 'THERMO PURE - Nettoyage Façades & Toitures par Drone - Niort (79)',
     description: 'Spécialistes du nettoyage de façades, murs et toitures par drone à Niort. Intervention Deux-Sèvres, Charente-Maritime, Vendée, Vienne.',
     siteName: 'THERMO PURE',
+    images: ['/logo.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'THERMO PURE - Nettoyage par Drone Niort',
     description: 'Nettoyage de façades et toitures par drone à Niort et Deux-Sèvres.',
+    images: ['/logo.jpg'],
   },
   verification: {
     // Ajoutez vos codes de vérification ici une fois disponibles

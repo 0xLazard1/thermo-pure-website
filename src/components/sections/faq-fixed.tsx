@@ -46,32 +46,32 @@ export const FAQSection = () => {
             {/* Section Separator */}
             <div className="absolute bottom-0 left-0 right-0 h-0.5 md:h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
             <div className="max-w-4xl mx-auto px-4">
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                <div className="text-center mb-8 sm:mb-12 md:mb-16">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
                         Vos questions, nos réponses
                     </h2>
                 </div>
 
-                <div className="space-y-3">
+                <div className="space-y-2 sm:space-y-3">
                     {faqData.map((faq, index) => (
                         <div key={index} className="bg-gray-50 rounded-lg border">
                             <button
                                 onClick={() => toggleFAQ(index)}
-                                className="w-full px-6 py-4 text-left flex items-center justify-between text-base font-semibold text-gray-800 hover:text-sky-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-inset rounded-lg"
+                                className="w-full px-4 py-3 sm:px-6 sm:py-4 text-left flex items-center justify-between text-sm sm:text-base font-semibold text-gray-800 hover:text-sky-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-inset rounded-lg"
                             >
-                                <span>{faq.question}</span>
+                                <span className="pr-4">{faq.question}</span>
                                 <ChevronDown
-                                    className={`h-5 w-5 text-gray-500 transition-transform duration-300 ${
+                                    className={`h-4 w-4 sm:h-5 sm:w-5 text-gray-500 transition-transform duration-300 flex-shrink-0 ${
                                         openIndex === index ? 'rotate-180' : ''
                                     }`}
                                 />
                             </button>
                             <div
                                 className={`overflow-hidden transition-all duration-500 ease-out ${
-                                    openIndex === index ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
+                                    openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                                 }`}
                             >
-                                <div className="px-6 pt-2 pb-6 text-gray-600 text-base leading-relaxed">
+                                <div className="px-4 pt-2 pb-4 sm:px-6 sm:pt-2 sm:pb-6 text-gray-600 text-sm sm:text-base leading-relaxed">
                                     {faq.answer}
                                 </div>
                             </div>

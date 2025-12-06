@@ -11,8 +11,8 @@ export default function AppleIcon() {
     (
       <div
         style={{
-          fontSize: 120,
-          background: 'linear-gradient(to bottom right, #22c55e, #16a34a)',
+          fontSize: 100,
+          background: '#0369a1',
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -20,9 +20,10 @@ export default function AppleIcon() {
           justifyContent: 'center',
           color: 'white',
           fontWeight: 'bold',
+          fontFamily: 'system-ui, sans-serif',
         }}
       >
-        T
+        TP
       </div>
     ),
     {

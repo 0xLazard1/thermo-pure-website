@@ -29,22 +29,38 @@ export const ContactSection = () => {
         e.preventDefault()
         setIsSubmitting(true)
 
-        // Simulation d'envoi email
-        await new Promise(resolve => setTimeout(resolve, 2000))
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
 
-        console.log("Email envoyé à contact@thermopure.fr:", formData)
-        setSubmitted(true)
-        setIsSubmitting(false)
-        setFormData({ name: "", email: "", phone: "", subject: "", message: "" })
+            const data = await response.json()
+
+            if (!response.ok) {
+                throw new Error(data.error || 'Erreur lors de l\'envoi')
+            }
+
+            setSubmitted(true)
+            setFormData({ name: "", email: "", phone: "", subject: "", message: "" })
+        } catch (error) {
+            console.error('Erreur:', error)
+            alert('Une erreur est survenue lors de l\'envoi du message. Veuillez réessayer ou nous contacter directement par téléphone.')
+        } finally {
+            setIsSubmitting(false)
+        }
     }
 
     if (submitted) {
         return (
             <section id="contact" className="py-12 md:py-16 lg:py-20 bg-white relative">
             <div className="max-w-6xl mx-auto px-4 flex items-center justify-center min-h-[50vh]">
-                <Card className="max-w-md mx-auto text-center">
+                <Card className="max-w-full sm:max-w-md mx-auto text-center">
                     <CardContent className="pt-6">
-                        <div className="text-6xl mb-4">✅</div>
+                        <div className="text-4xl sm:text-5xl md:text-6xl mb-4">✅</div>
                         <h3 className="text-2xl font-bold text-gray-800 mb-2">Message envoyé !</h3>
                         <p className="text-gray-600 mb-4">
                             Nous avons bien reçu votre message et vous recontacterons dans les plus brefs délais.
@@ -71,7 +87,7 @@ export const ContactSection = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
                     {/* Informations de contact */}
                     <div className="space-y-6">
                         <Card className="border-2 border-emerald-100 hover:border-emerald-300 hover:shadow-lg transition-all duration-300">
@@ -126,8 +142,8 @@ export const ContactSection = () => {
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
-                            <form onSubmit={handleSubmit} className="space-y-4">
-                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                            <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                                     <div>
                                         <Label htmlFor="name">Nom complet *</Label>
                                         <Input
@@ -192,7 +208,7 @@ export const ContactSection = () => {
 
                                 <Button
                                     type="submit"
-                                    className="w-full"
+                                    className="w-full py-2 sm:py-3"
                                     disabled={isSubmitting}
                                 >
                                     {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}

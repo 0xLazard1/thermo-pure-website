@@ -8,8 +8,8 @@ export const StickyCtaMobile = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            // Afficher le CTA après avoir scrollé 300px
-            setIsVisible(window.scrollY > 300)
+            // Afficher le CTA après avoir scrollé 250px (réduit pour mobile)
+            setIsVisible(window.scrollY > 250)
         }
 
         window.addEventListener('scroll', handleScroll)
@@ -21,10 +21,10 @@ export const StickyCtaMobile = () => {
     return (
         <>
             {/* Version Mobile uniquement (caché sur desktop) */}
-            <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 animate-slide-up">
+            <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 animate-slide-up pb-safe" style={{paddingBottom: 'max(1rem, env(safe-area-inset-bottom))'}}>
                 {/* Options dépliées */}
                 {showOptions && (
-                    <div className="bg-white border-t border-gray-200 shadow-2xl p-4 space-y-3">
+                    <div className="bg-white border-t border-gray-200 shadow-2xl p-3 sm:p-4 space-y-3">
                         <button
                             onClick={() => setShowOptions(false)}
                             className="absolute top-2 right-2 p-2 text-gray-400 hover:text-gray-600"
@@ -35,19 +35,19 @@ export const StickyCtaMobile = () => {
                         {/* Bouton Appeler */}
                         <a
                             href="tel:+33671558027"
-                            className="flex items-center justify-center gap-3 w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-xl transition-all duration-300 shadow-lg"
+                            className="flex items-center justify-center gap-2 sm:gap-3 w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 sm:py-4 rounded-xl transition-all duration-300 shadow-lg text-sm sm:text-base"
                         >
-                            <Phone className="w-5 h-5 animate-pulse" />
+                            <Phone className="w-4 h-4 sm:w-5 sm:h-5 animate-pulse" />
                             Appeler maintenant
                         </a>
 
                         {/* Bouton Devis */}
                         <a
-                            href="#devis"
+                            href="#contact"
                             onClick={() => setShowOptions(false)}
-                            className="flex items-center justify-center gap-3 w-full bg-white hover:bg-gray-50 text-emerald-600 font-bold py-4 rounded-xl border-2 border-emerald-600 transition-all duration-300"
+                            className="flex items-center justify-center gap-2 sm:gap-3 w-full bg-white hover:bg-gray-50 text-emerald-600 font-bold py-3 sm:py-4 rounded-xl border-2 border-emerald-600 transition-all duration-300 text-sm sm:text-base"
                         >
-                            <FileText className="w-5 h-5" />
+                            <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
                             Devis Gratuit
                         </a>
                     </div>
