@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://www.thermopure.fr',
+    url: 'https://thermo-pure.com',
     title: 'THERMO PURE - Nettoyage Façades & Toitures par Drone - Niort (79)',
     description: 'Spécialistes du nettoyage de façades, murs et toitures par drone à Niort. Intervention Deux-Sèvres, Charente-Maritime, Vendée, Vienne.',
     siteName: 'THERMO PURE',
@@ -57,7 +57,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <link rel="canonical" href="https://www.thermopure.fr" />
+        <link rel="canonical" href="https://thermo-pure.com" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-78SNLPQ1LW"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -76,7 +76,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "THERMO PURE",
-              "image": "https://www.thermopure.fr/logo.jpg",
+              "image": "https://thermo-pure.com/logo.jpg",
               "description": "Spécialistes du nettoyage de façades, murs et toitures par drone à Niort et Deux-Sèvres (79). Intervention Charente-Maritime (17), Vendée (85), Vienne (86).",
               "address": {
                 "@type": "PostalAddress",
@@ -90,7 +90,7 @@ export default function RootLayout({
                 "latitude": "46.323889",
                 "longitude": "-0.464444"
               },
-              "url": "https://www.thermopure.fr",
+              "url": "https://thermo-pure.com",
               "telephone": "+33671558027",
               "email": "contact@thermo-pure.com",
               "priceRange": "€€",

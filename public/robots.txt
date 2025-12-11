@@ -1,11 +1,11 @@
 # Robots.txt for THERMO PURE
-# https://www.thermopure.fr
+# https://thermo-pure.com
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.thermopure.fr/sitemap.xml
+Sitemap: https://thermo-pure.com/sitemap.xml
 
 # Crawl delay
 Crawl-delay: 0
