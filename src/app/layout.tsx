@@ -58,6 +58,72 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <link rel="canonical" href="https://www.thermopure.fr" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-78SNLPQ1LW"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-78SNLPQ1LW');
+            `,
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "THERMO PURE",
+              "image": "https://www.thermopure.fr/logo.jpg",
+              "description": "Spécialistes du nettoyage de façades, murs et toitures par drone à Niort et Deux-Sèvres (79). Intervention Charente-Maritime (17), Vendée (85), Vienne (86).",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Niort",
+                "addressRegion": "Deux-Sèvres",
+                "postalCode": "79000",
+                "addressCountry": "FR"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "46.323889",
+                "longitude": "-0.464444"
+              },
+              "url": "https://www.thermopure.fr",
+              "telephone": "+33671558027",
+              "email": "contact@thermo-pure.com",
+              "priceRange": "€€",
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "08:00",
+                  "closes": "18:00"
+                }
+              ],
+              "areaServed": [
+                {
+                  "@type": "GeoCircle",
+                  "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "46.323889",
+                    "longitude": "-0.464444"
+                  },
+                  "geoRadius": "100000"
+                }
+              ],
+              "serviceType": [
+                "Nettoyage de façades",
+                "Nettoyage de toitures",
+                "Nettoyage par drone",
+                "Démoussage",
+                "Nettoyage haute pression"
+              ],
+              "sameAs": []
+            }),
+          }}
+        />
       </head>
       <body className={inter.className}>
         <main>{children}</main>
