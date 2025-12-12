@@ -8,7 +8,7 @@ export const AboutSection = () => {
             <div className="max-w-6xl mx-auto px-4">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-sky-700 to-sky-600 bg-clip-text text-transparent mb-6">
-                        Qui sommes nous ?
+                        Qui sommes-nous ?
                     </h2>
                     <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
                         Derrière THERMO PURE : deux entrepreneurs passionnés qui ont fait de la propreté et de la valorisation des bâtiments leur métier et leur engagement.
