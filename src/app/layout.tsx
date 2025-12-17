@@ -6,8 +6,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'], display: 'swap' })
 
 export const metadata: Metadata = {
-  title: 'THERMO PURE - Nettoyage Façades, Toitures & Drone à Niort (79) - Deux-Sèvres',
-  description: 'Spécialistes du nettoyage de façades, murs et toitures par drone à Niort et Deux-Sèvres (79). Intervention Charente-Maritime (17), Vendée (85), Vienne (86). Devis gratuit. SIRET: 991 013 038 00013',
+  title: 'THERMO PURE - Nettoyage Façades, Toitures  à Niort (79) - Deux-Sèvres',
+  description: "Spécialiste du nettoyage extérieur à la vapeur basse pression : toitures, façades, terrasses et tout type d'extérieur. Intervention en Nouvelle-Aquitaine et départements voisins (79, 17, 85, 86). Devis gratuit. SIRET: 991 013 038 00013",
   keywords: ['nettoyage façade Niort', 'nettoyage toiture Deux-Sèvres', 'nettoyage drone 79', 'démoussage Niort', 'nettoyage haute pression', 'Charente-Maritime', 'Vendée', 'Vienne', 'La Rochelle', 'Poitiers', 'Niort', 'Nouvelle-Aquitaine'],
   authors: [{ name: 'THERMO PURE' }],
   creator: 'THERMO PURE',
@@ -31,16 +31,16 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fr_FR',
     url: 'https://thermo-pure.com',
-    title: 'THERMO PURE - Nettoyage Façades & Toitures par Drone - Niort (79)',
-    description: 'Spécialistes du nettoyage de façades, murs et toitures par drone à Niort. Intervention Deux-Sèvres, Charente-Maritime, Vendée, Vienne.',
+    title: 'THERMO PURE - Nettoyage Façades & Toitures - Niort (79)',
+    description: "Spécialiste du nettoyage extérieur à la vapeur basse pression : toitures, façades, terrasses et tout type d'extérieur. Intervention en Nouvelle-Aquitaine et départements voisins (79, 17, 85, 86). Devis gratuit. SIRET: 991 013 038 00013",
     siteName: 'THERMO PURE',
-    images: ['/logo.jpg'],
+    images: ['https://thermo-pure.com/logo.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'THERMO PURE - Nettoyage par Drone Niort',
-    description: 'Nettoyage de façades et toitures par drone à Niort et Deux-Sèvres.',
-    images: ['/logo.jpg'],
+    description: "Spécialiste du nettoyage extérieur à la vapeur basse pression : toitures, façades, terrasses et tout type d'extérieur. Intervention en Nouvelle-Aquitaine et départements voisins (79, 17, 85, 86). Devis gratuit. SIRET: 991 013 038 00013",
+    images: ['https://thermo-pure.com/logo.jpg'],
   },
   verification: {
     // Ajoutez vos codes de vérification ici une fois disponibles
@@ -77,7 +77,7 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               "name": "THERMO PURE",
               "image": "https://thermo-pure.com/logo.jpg",
-              "description": "Spécialistes du nettoyage de façades, murs et toitures par drone à Niort et Deux-Sèvres (79). Intervention Charente-Maritime (17), Vendée (85), Vienne (86).",
+              "description": "Spécialiste du nettoyage extérieur à la vapeur basse pression : toitures, façades, terrasses et tout type d'extérieur. Intervention en Nouvelle-Aquitaine et départements voisins (79, 17, 85, 86). Devis gratuit. SIRET: 991 013 038 00013",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Niort",
@@ -97,30 +97,64 @@ export default function RootLayout({
               "openingHoursSpecification": [
                 {
                   "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
                   "opens": "08:00",
-                  "closes": "18:00"
+                  "closes": "20:00"
                 }
               ],
               "areaServed": [
                 {
-                  "@type": "GeoCircle",
-                  "geoMidpoint": {
-                    "@type": "GeoCoordinates",
-                    "latitude": "46.323889",
-                    "longitude": "-0.464444"
-                  },
-                  "geoRadius": "100000"
+                  "@type": "State",
+                  "name": "Deux-Sèvres"
+                },
+                {
+                  "@type": "State",
+                  "name": "Charente-Maritime"
+                },
+                {
+                  "@type": "State",
+                  "name": "Vendée"
+                },
+                {
+                  "@type": "State",
+                  "name": "Vienne"
                 }
               ],
-              "serviceType": [
-                "Nettoyage de façades",
-                "Nettoyage de toitures",
-                "Nettoyage par drone",
-                "Démoussage",
-                "Nettoyage haute pression"
+              "sameAs": [
+                "https://www.facebook.com/thermopure",
+                "https://www.instagram.com/thermopure",
+                "https://www.tiktok.com/@thermopure"
               ],
-              "sameAs": []
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Services de nettoyage",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Nettoyage de Façades",
+                      "description": "Nettoyage professionnel de façades en pierre, béton, brique ou enduit à la vapeur basse pression"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Nettoyage de Toitures",
+                      "description": "Démoussage et nettoyage de toitures : tuiles, ardoises, zinc à la vapeur basse pression"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Nettoyage de Terrasses & Extérieurs",
+                      "description": "Nettoyage de terrasses, allées, cours et espaces extérieurs à la vapeur basse pression"
+                    }
+                  }
+                ]
+              }
             }),
           }}
         />
