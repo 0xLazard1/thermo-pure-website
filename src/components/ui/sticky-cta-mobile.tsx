@@ -28,6 +28,7 @@ export const StickyCtaMobile = () => {
                         <button
                             onClick={() => setShowOptions(false)}
                             className="absolute top-2 right-2 p-2 text-gray-400 hover:text-gray-600"
+                            aria-label="Fermer le menu"
                         >
                             <X className="w-5 h-5" />
                         </button>

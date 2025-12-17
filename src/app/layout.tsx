@@ -2,6 +2,7 @@
 import "./globals.css";
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' })
 
@@ -58,17 +59,6 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <link rel="canonical" href="https://thermo-pure.com" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-78SNLPQ1LW"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-78SNLPQ1LW');
-            `,
-          }}
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -160,6 +150,18 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-78SNLPQ1LW"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-78SNLPQ1LW');
+          `}
+        </Script>
         <main>{children}</main>
       </body>
     </html>

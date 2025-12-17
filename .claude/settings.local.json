@@ -18,7 +18,8 @@
       "Bash(grep:*)",
       "Bash(tree:*)",
       "Bash(curl:*)",
-      "Bash(node -e:*)"
+      "Bash(node -e:*)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []
