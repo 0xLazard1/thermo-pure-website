@@ -1,7 +1,29 @@
 # Robots.txt for THERMO PURE
 # https://thermo-pure.com
 
+# Tous les moteurs de recherche
 User-agent: *
+Allow: /
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Yahoo / DuckDuckGo (utilise Yahoo)
+User-agent: Slurp
+Allow: /
+
+
+# Qwant (France)
+User-agent: Qwantify
+Allow: /
+
+# Ecosia (écologique)
+User-agent: EcosiaBot
 Allow: /
 
 # Sitemap

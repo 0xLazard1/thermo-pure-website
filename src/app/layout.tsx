@@ -44,9 +44,14 @@ export const metadata: Metadata = {
     images: ['https://thermo-pure.com/logo.jpg'],
   },
   verification: {
-    // Ajoutez vos codes de vérification ici une fois disponibles
-    // google: 'votre-code-google',
-    // yandex: 'votre-code-yandex',
+    // Codes de vérification pour les moteurs de recherche
+    // google: 'votre-code-google', // Google Search Console
+    // yandex: 'votre-code-yandex', // Yandex Webmaster
+    // bing: 'votre-code-bing', // Bing Webmaster Tools
+  },
+  other: {
+    'msapplication-TileColor': '#0ea5e9',
+    'msapplication-config': '/browserconfig.xml',
   },
 }
 

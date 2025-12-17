@@ -19,7 +19,14 @@
       "Bash(tree:*)",
       "Bash(curl:*)",
       "Bash(node -e:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(npx eslint:*)",
+      "Bash(for file in badge card drawer)",
+      "Bash(do echo \"=== Checking $file ===\")",
+      "Bash(done)",
+      "Bash(for img in hero-bg.jpg Image_Façade_Presentation.jpg Image_Terrace_Presentation.jpg logo.jpg video_presentation.webm)",
+      "Bash(do echo \"=== $img ===\")",
+      "Bash(npx tsc:*)"
     ],
     "deny": [],
     "ask": []
