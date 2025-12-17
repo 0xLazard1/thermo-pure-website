@@ -7,30 +7,37 @@ const carouselImages = [
     {
         id: 1,
         src: "/Image_Nettoyage_1.jpg",
+        alt: "Nettoyage de toiture avant/après - THERMO PURE Niort"
     },
     {
         id: 2,
         src: "/Image_Nettoyage_2.jpg",
+        alt: "Nettoyage de façade en pierre à la vapeur basse pression - Deux-Sèvres"
     },
     {
         id: 3,
         src: "/Image_Nettoyage_3.jpg",
+        alt: "Résultat de nettoyage de terrasse extérieure - THERMO PURE"
     },
     {
         id: 4,
         src: "/Image_Nettoyage_4.jpg",
+        alt: "Démoussage de toiture à la vapeur - Nouvelle-Aquitaine"
     },
     {
         id: 5,
         src: "/Image_Nettoyage_5.jpg",
+        alt: "Nettoyage professionnel de mur extérieur - THERMO PURE"
     },
     {
         id: 6,
         src: "/Image_Nettoyage_6.jpg",
+        alt: "Nettoyage de façade commerciale à Niort - Vapeur basse pression"
     },
     {
         id: 7,
         src: "/Image_Nettoyage_7.jpg",
+        alt: "Rénovation de surface extérieure par nettoyage vapeur - THERMO PURE"
     }
 ]
 
@@ -109,7 +116,7 @@ export const ExamplesSection = () => {
                             <div className="relative w-full bg-gradient-to-br from-gray-100 to-gray-50 overflow-hidden flex items-center justify-center p-3 sm:p-4 min-h-[250px] sm:min-h-[300px] md:min-h-[400px]">
                                 <Image
                                     src={currentImage.src}
-                                    alt={`Exemple ${currentIndex + 1}`}
+                                    alt={currentImage.alt}
                                     width={800}
                                     height={600}
                                     className="w-full h-auto object-contain rounded-lg max-h-[250px] sm:max-h-[400px] md:max-h-[600px]"

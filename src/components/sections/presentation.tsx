@@ -65,7 +65,7 @@ export const PresentationSection = () => {
                         <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-sky-400 to-cyan-400"></div>
                         <div className="relative h-48 overflow-hidden">
                             <Image
-                                src="/Image_Terrace_Presentation.png"
+                                src="/Image_Terrace_Presentation.jpg"
                                 alt="Nettoyage de terrasse à la vapeur"
                                 width={400}
                                 height={300}

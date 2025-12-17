@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'], display: 'swap' })
 export const metadata: Metadata = {
   title: 'THERMO PURE - Nettoyage Façades, Toitures  à Niort (79) - Deux-Sèvres',
   description: "Spécialiste du nettoyage extérieur à la vapeur basse pression : toitures, façades, terrasses et tout type d'extérieur. Intervention en Nouvelle-Aquitaine et départements voisins (79, 17, 85, 86). Devis gratuit. SIRET: 991 013 038 00013",
-  keywords: ['nettoyage façade Niort', 'nettoyage toiture Deux-Sèvres', 'nettoyage drone 79', 'démoussage Niort', 'nettoyage haute pression', 'Charente-Maritime', 'Vendée', 'Vienne', 'La Rochelle', 'Poitiers', 'Niort', 'Nouvelle-Aquitaine'],
+  keywords: ['nettoyage façade Niort', 'nettoyage toiture Deux-Sèvres', 'nettoyage vapeur basse pression', 'démoussage Niort', 'nettoyage écologique', 'Charente-Maritime', 'Vendée', 'Vienne', 'La Rochelle', 'Poitiers', 'Niort', 'Nouvelle-Aquitaine'],
   authors: [{ name: 'THERMO PURE' }],
   creator: 'THERMO PURE',
   publisher: 'THERMO PURE',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'THERMO PURE - Nettoyage par Drone Niort',
+    title: 'THERMO PURE - Nettoyage Façades & Toitures - Niort (79)',
     description: "Spécialiste du nettoyage extérieur à la vapeur basse pression : toitures, façades, terrasses et tout type d'extérieur. Intervention en Nouvelle-Aquitaine et départements voisins (79, 17, 85, 86). Devis gratuit. SIRET: 991 013 038 00013",
     images: ['https://thermo-pure.com/logo.jpg'],
   },

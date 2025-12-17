@@ -1,6 +1,6 @@
 import { HeroSection } from "../sections/hero"
 import { PresentationSection } from "../sections/presentation"
-import { DroneInnovationSection } from "../sections/drone-innovation"
+import { SteamCleaningSection } from "../sections/steam-cleaning"
 import { AboutSection } from "../sections/about"
 import { ExamplesSection } from "../sections/examples"
 import { DevisSection } from "../sections/devis"
@@ -20,7 +20,7 @@ export const Page = () => {
             <PresentationSection />
 
             {/* 3. Nettoyage Vapeur Basse Pression - Section dédiée à votre différenciateur */}
-            <DroneInnovationSection />
+            <SteamCleaningSection />
 
             {/* 4. Devis - CTA quand l'intérêt est maximum */}
             <DevisSection />

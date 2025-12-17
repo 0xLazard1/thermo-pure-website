@@ -1,15 +1,21 @@
 'use client'
 import { Phone, FileText } from "lucide-react"
+import Image from "next/image"
 
 export const HeroSection = () => {
 
     return (
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-sky-900 via-sky-800 to-sky-900">
             {/* Background Image */}
-            <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-                style={{backgroundImage: 'url(/hero-bg.jpg)'}}
-            >
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="/hero-bg.jpg"
+                    alt="Nettoyage de façade et toiture à la vapeur basse pression - THERMO PURE"
+                    fill
+                    priority
+                    quality={90}
+                    className="object-cover"
+                />
                 {/* Overlay pour meilleure lisibilité du texte */}
                 <div className="absolute inset-0 bg-gradient-to-t from-sky-900/70 via-sky-800/45 to-sky-900/20"></div>
             </div>
