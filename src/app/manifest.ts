@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'THERMO PURE - Nettoyage Professionnel',
     short_name: 'THERMO PURE',
-    description: 'Spécialistes du nettoyage de façades, murs et toitures en France',
+    description: "Spécialiste du nettoyage extérieur à la vapeur basse pression : toitures, façades, terrasses et tout type d'extérieur. Intervention en Nouvelle-Aquitaine et départements voisins (79, 17, 85, 86). Devis gratuit. SIRET: 991 013 038 00013",
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
