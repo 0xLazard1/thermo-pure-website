@@ -9,7 +9,7 @@ export const HeroSection = () => {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/hero-bg.jpg"
+                    src="/hero-bg.avif"
                     alt="Nettoyage de façade et toiture à la vapeur basse pression - THERMO PURE"
                     fill
                     priority
@@ -51,7 +51,7 @@ export const HeroSection = () => {
                         href="tel:+33671558027"
                         className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 sm:gap-3 px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 text-base sm:text-lg font-bold text-white bg-sky-600/20 backdrop-blur-sm border-2 border-white hover:bg-white hover:text-sky-900 rounded-full transition-all duration-300 hover:scale-105 transform"
                     >
-                        <Phone className="w-5 h-5 sm:w-6 sm:h-6 animate-pulse" />
+                        <Phone className="w-5 h-5 sm:w-6 sm:h-6 animate-pulse-gpu" />
                         06 71 55 80 27
                     </a>
                 </div>
@@ -69,9 +69,9 @@ export const HeroSection = () => {
                 </div>
 
                 {/* Scroll Indicator - Hidden on mobile to avoid conflicts with sticky CTA */}
-                <div className="hidden md:block absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <div className="hidden md:block absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce-gpu">
                     <div className="w-6 h-10 border-2 border-white/40 rounded-full p-1">
-                        <div className="w-1.5 h-3 bg-white/60 rounded-full mx-auto animate-pulse"></div>
+                        <div className="w-1.5 h-3 bg-white/60 rounded-full mx-auto animate-pulse-gpu"></div>
                     </div>
                 </div>
             </div>

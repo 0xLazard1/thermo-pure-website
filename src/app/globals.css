@@ -185,3 +185,34 @@
     transform: scale(1);
   }
 }
+
+/* Animations optimisées GPU pour performance */
+@keyframes pulse-gpu {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes bounce-gpu {
+  0%, 100% {
+    transform: translateY(0) translateZ(0);
+  }
+  50% {
+    transform: translateY(-10px) translateZ(0);
+  }
+}
+
+.animate-pulse-gpu {
+  animation: pulse-gpu 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  will-change: transform, opacity;
+}
+
+.animate-bounce-gpu {
+  animation: bounce-gpu 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  will-change: transform;
+}

@@ -18,7 +18,7 @@ export default function MentionsLegalesPage() {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <Image src="/logo.jpg" alt="THERMO PURE" width={48} height={48} className="h-12 w-auto rounded-lg" />
+            <Image src="/logo.avif" alt="THERMO PURE" width={48} height={48} className="h-12 w-auto rounded-lg" />
             <span className="text-xl font-bold text-sky-700">THERMO PURE</span>
           </Link>
           <Link

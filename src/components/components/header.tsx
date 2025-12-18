@@ -37,7 +37,7 @@ export const Header = () => {
     ? <header className="bg-white border-b border-emerald-100 shadow-sm sticky top-0 z-50 backdrop-blur-sm bg-white/95">
         <div className="flex justify-between items-center px-6 py-4 max-w-6xl mx-auto">
             <div className="flex items-center space-x-3">
-                <Image src="/logo.jpg" alt="THERMO PURE Logo" width={96} height={96} className="h-24 w-auto" priority />
+                <Image src="/logo.avif" alt="THERMO PURE Logo" width={96} height={96} className="h-24 w-auto" priority />
             </div>
             <nav className="flex space-x-8">
                 <Link href="#presentation" className="text-gray-700 hover:text-emerald-600 font-medium transition-all duration-200 hover:scale-105">
@@ -64,7 +64,7 @@ export const Header = () => {
     : <header className="bg-white border-b border-emerald-100 shadow-sm sticky top-0 z-50 backdrop-blur-sm bg-white/95">
         <div className="flex justify-between items-center px-4 py-4">
             <div className="flex items-center space-x-2">
-                <Image src="/logo.jpg" alt="THERMO PURE Logo" width={64} height={64} className="h-16 w-auto" priority />
+                <Image src="/logo.avif" alt="THERMO PURE Logo" width={64} height={64} className="h-16 w-auto" priority />
             </div>
             <Drawer direction="right" open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>
                 <DrawerTrigger asChild>

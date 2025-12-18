@@ -25,10 +25,12 @@ export const PresentationSection = () => {
                         <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-sky-600 to-sky-400"></div>
                         <div className="relative h-48 overflow-hidden">
                             <Image
-                                src="/Image_Nettoyage_3.jpg"
+                                src="/Image_Nettoyage_3.avif"
                                 alt="Nettoyage de toiture à la vapeur"
                                 width={400}
                                 height={300}
+                                loading="lazy"
+                                quality={85}
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
                         </div>
@@ -45,10 +47,12 @@ export const PresentationSection = () => {
                         <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-sky-500 to-sky-400"></div>
                         <div className="relative h-48 overflow-hidden">
                             <Image
-                                src="/Image_Façade_Presentation.jpg"
+                                src="/Image_Façade_Presentation.avif"
                                 alt="Nettoyage de façade à la vapeur"
                                 width={400}
                                 height={300}
+                                loading="lazy"
+                                quality={85}
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
                         </div>
@@ -65,10 +69,12 @@ export const PresentationSection = () => {
                         <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-sky-400 to-cyan-400"></div>
                         <div className="relative h-48 overflow-hidden">
                             <Image
-                                src="/Image_Terrace_Presentation.jpg"
+                                src="/Image_Terrace_Presentation.avif"
                                 alt="Nettoyage de terrasse à la vapeur"
                                 width={400}
                                 height={300}
+                                loading="lazy"
+                                quality={85}
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
                         </div>

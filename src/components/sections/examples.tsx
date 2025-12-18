@@ -6,37 +6,37 @@ import Image from 'next/image'
 const carouselImages = [
     {
         id: 1,
-        src: "/Image_Nettoyage_1.jpg",
+        src: "/Image_Nettoyage_1.avif",
         alt: "Nettoyage de toiture avant/après - THERMO PURE Niort"
     },
     {
         id: 2,
-        src: "/Image_Nettoyage_2.jpg",
+        src: "/Image_Nettoyage_2.avif",
         alt: "Nettoyage de façade en pierre à la vapeur basse pression - Deux-Sèvres"
     },
     {
         id: 3,
-        src: "/Image_Nettoyage_3.jpg",
+        src: "/Image_Nettoyage_3.avif",
         alt: "Résultat de nettoyage de terrasse extérieure - THERMO PURE"
     },
     {
         id: 4,
-        src: "/Image_Nettoyage_4.jpg",
+        src: "/Image_Nettoyage_4.avif",
         alt: "Démoussage de toiture à la vapeur - Nouvelle-Aquitaine"
     },
     {
         id: 5,
-        src: "/Image_Nettoyage_5.jpg",
+        src: "/Image_Nettoyage_5.avif",
         alt: "Nettoyage professionnel de mur extérieur - THERMO PURE"
     },
     {
         id: 6,
-        src: "/Image_Nettoyage_6.jpg",
+        src: "/Image_Nettoyage_6.avif",
         alt: "Nettoyage de façade commerciale à Niort - Vapeur basse pression"
     },
     {
         id: 7,
-        src: "/Image_Nettoyage_7.jpg",
+        src: "/Image_Nettoyage_7.avif",
         alt: "Rénovation de surface extérieure par nettoyage vapeur - THERMO PURE"
     }
 ]
@@ -89,6 +89,7 @@ export const ExamplesSection = () => {
                                 autoPlay
                                 muted
                                 loop
+                                playsInline
                             >
                                 <source src="/video_presentation.webm" type="video/webm" />
                                 Votre navigateur ne supporte pas les vidéos HTML5.
@@ -119,6 +120,8 @@ export const ExamplesSection = () => {
                                     alt={currentImage.alt}
                                     width={800}
                                     height={600}
+                                    loading="lazy"
+                                    quality={85}
                                     className="w-full h-auto object-contain rounded-lg max-h-[250px] sm:max-h-[400px] md:max-h-[600px]"
                                 />
                             </div>

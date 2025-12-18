@@ -11,7 +11,7 @@ export const Footer = () => {
                     {/* Colonne 1 - À propos */}
                     <div>
                         <div className="flex items-center space-x-3 mb-4">
-                            <Image src="/logo.jpg" alt="THERMO PURE Logo" width={48} height={48} className="h-12 w-auto" />
+                            <Image src="/logo.avif" alt="THERMO PURE Logo" width={48} height={48} className="h-12 w-auto" />
                             <h3 className="text-xl font-bold bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent">
                                 THERMO PURE
                             </h3>
