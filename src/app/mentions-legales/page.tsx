@@ -3,11 +3,18 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Mentions Légales - THERMO PURE',
-  description: 'Mentions légales et informations juridiques de THERMO PURE',
+  title: 'Mentions Légales - THERMO PURE | Nettoyage Façades & Toitures Niort',
+  description: 'Mentions légales de THERMO PURE, spécialiste du nettoyage de façades et toitures à la vapeur basse pression à Niort (79). SIRET: 991 013 038 00013',
+  alternates: {
+    canonical: 'https://thermo-pure.com/mentions-legales',
+  },
   robots: {
-    index: false,
+    index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 }
 

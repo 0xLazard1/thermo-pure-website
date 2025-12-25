@@ -12,6 +12,10 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://thermo-pure.com'),
+  alternates: {
+    canonical: '/',
+  },
   title: 'THERMO PURE - Nettoyage Façades, Toitures  à Niort (79) - Deux-Sèvres',
   description: "Spécialiste du nettoyage extérieur à la vapeur basse pression : toitures, façades, terrasses et tout type d'extérieur. Intervention en Nouvelle-Aquitaine et départements voisins (79, 17, 85, 86). Devis gratuit. SIRET: 991 013 038 00013",
   keywords: ['nettoyage façade Niort', 'nettoyage toiture Deux-Sèvres', 'nettoyage vapeur basse pression', 'démoussage Niort', 'nettoyage écologique', 'Charente-Maritime', 'Vendée', 'Vienne', 'La Rochelle', 'Poitiers', 'Niort', 'Nouvelle-Aquitaine'],
@@ -68,7 +72,6 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <link rel="canonical" href="https://thermo-pure.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

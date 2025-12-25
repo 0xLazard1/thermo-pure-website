@@ -3,11 +3,18 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Politique de Confidentialité - THERMO PURE',
-  description: 'Politique de confidentialité et protection des données personnelles de THERMO PURE',
+  title: 'Politique de Confidentialité - THERMO PURE | Protection des Données',
+  description: 'Politique de confidentialité et protection des données personnelles de THERMO PURE. Découvrez comment nous protégeons vos informations conformément au RGPD.',
+  alternates: {
+    canonical: 'https://thermo-pure.com/politique-confidentialite',
+  },
   robots: {
-    index: false,
+    index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 }
 
