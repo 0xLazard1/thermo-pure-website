@@ -56,12 +56,6 @@ export const metadata: Metadata = {
     description: "Spécialiste du nettoyage extérieur à la vapeur basse pression : toitures, façades, terrasses et tout type d'extérieur. Intervention en Nouvelle-Aquitaine et départements voisins (79, 17, 85, 86). Devis gratuit. SIRET: 991 013 038 00013",
     images: ['https://thermo-pure.com/logo.avif'],
   },
-  verification: {
-    // Codes de vérification pour les moteurs de recherche
-    // google: 'votre-code-google', // Google Search Console
-    // yandex: 'votre-code-yandex', // Yandex Webmaster
-    // bing: 'votre-code-bing', // Bing Webmaster Tools
-  },
   other: {
     'msapplication-TileColor': '#0ea5e9',
     'msapplication-config': '/browserconfig.xml',
@@ -100,6 +94,13 @@ export default function RootLayout({
               "url": "https://thermo-pure.com",
               "telephone": "+33671558027",
               "email": "contact@thermo-pure.com",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+33671558027",
+                "contactType": "customer service",
+                "availableLanguage": "French",
+                "areaServed": "FR"
+              },
               "priceRange": "€€",
               "openingHoursSpecification": [
                 {

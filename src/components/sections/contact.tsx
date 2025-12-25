@@ -59,15 +59,27 @@ export const ContactSection = () => {
             <section id="contact" className="py-12 md:py-16 lg:py-20 bg-white relative">
             <div className="max-w-6xl mx-auto px-4 flex items-center justify-center min-h-[50vh]">
                 <Card className="max-w-full sm:max-w-md mx-auto text-center">
-                    <CardContent className="pt-6">
-                        <div className="text-4xl sm:text-5xl md:text-6xl mb-4">✅</div>
-                        <h3 className="text-2xl font-bold text-gray-800 mb-2">Message envoyé !</h3>
-                        <p className="text-gray-600 mb-4">
-                            Nous avons bien reçu votre message et vous recontacterons dans les plus brefs délais.
+                    <CardContent className="pt-8 pb-8">
+                        <div className="text-5xl sm:text-6xl md:text-7xl mb-6">🎉</div>
+                        <h3 className="text-2xl sm:text-3xl font-bold text-emerald-700 mb-3">Merci pour votre message !</h3>
+                        <p className="text-gray-600 mb-6 leading-relaxed">
+                            Nous avons bien reçu votre demande et nous vous recontacterons dans les plus brefs délais.
                         </p>
-                        <Button onClick={() => setSubmitted(false)}>
-                            Envoyer un autre message
-                        </Button>
+                        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                            <Button
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                className="bg-emerald-600 hover:bg-emerald-700"
+                            >
+                                Retour en haut de page
+                            </Button>
+                            <Button
+                                variant="outline"
+                                onClick={() => setSubmitted(false)}
+                                className="border-emerald-600 text-emerald-600 hover:bg-emerald-50"
+                            >
+                                Envoyer un autre message
+                            </Button>
+                        </div>
                     </CardContent>
                 </Card>
             </div>

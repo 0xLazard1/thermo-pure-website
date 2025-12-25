@@ -16,12 +16,45 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
+    url: 'https://thermo-pure.com/mentions-legales',
+    title: 'Mentions Légales - THERMO PURE',
+    description: 'Mentions légales de THERMO PURE, spécialiste du nettoyage de façades et toitures à la vapeur basse pression à Niort (79).',
+    siteName: 'THERMO PURE',
+    images: ['https://thermo-pure.com/logo.avif'],
+  },
 }
 
 export default function MentionsLegalesPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Header */}
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Accueil",
+                "item": "https://thermo-pure.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Mentions Légales",
+                "item": "https://thermo-pure.com/mentions-legales"
+              }
+            ]
+          })
+        }}
+      />
+      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+        {/* Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
@@ -159,6 +192,7 @@ export default function MentionsLegalesPage() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   )
 }
