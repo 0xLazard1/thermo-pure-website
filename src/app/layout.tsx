@@ -23,9 +23,13 @@ export const metadata: Metadata = {
   creator: 'THERMO PURE',
   publisher: 'THERMO PURE',
   icons: {
-    icon: '/logo.avif',
-    shortcut: '/logo.avif',
-    apple: '/logo.avif',
+    icon: [
+      { url: '/favicon-16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon.png', sizes: '48x48', type: 'image/png' },
+    ],
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   },
   robots: {
     index: true,
