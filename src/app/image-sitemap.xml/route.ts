@@ -66,7 +66,7 @@ export async function GET() {
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>${baseUrl}</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <lastmod>2025-12-26</lastmod>
 ${images.map(img => `    <image:image>
       <image:loc>${img.loc}</image:loc>
       <image:title>${img.title}</image:title>
