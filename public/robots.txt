@@ -26,8 +26,9 @@ Allow: /
 User-agent: EcosiaBot
 Allow: /
 
-# Sitemap
+# Sitemaps
 Sitemap: https://thermo-pure.com/sitemap.xml
+Sitemap: https://thermo-pure.com/image-sitemap.xml
 
 # Limiter les bots SEO tiers
 User-agent: AhrefsBot
