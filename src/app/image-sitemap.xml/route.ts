@@ -2,6 +2,9 @@ import { NextResponse } from 'next/server'
 
 const baseUrl = 'https://thermo-pure.com'
 
+// Date de build (figée au moment du déploiement)
+const buildDate = new Date().toISOString().split('T')[0]
+
 const images = [
   {
     loc: `${baseUrl}/hero-bg.webp`,
@@ -66,7 +69,7 @@ export async function GET() {
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>${baseUrl}</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>${buildDate}</lastmod>
 ${images.map(img => `    <image:image>
       <image:loc>${img.loc}</image:loc>
       <image:title>${img.title}</image:title>
