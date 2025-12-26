@@ -23,10 +23,9 @@ export const HeroSection = () => {
             {/* Contenu Principal */}
             <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 text-center">
                 {/* Titre Principal */}
-                <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-                    Nettoyage de Toitures & Façades
-                    <br />
-                    <span className="bg-gradient-to-r from-sky-300 to-sky-200 bg-clip-text text-transparent">
+                <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                    <span className="block">Nettoyage de Toitures & Façades</span>
+                    <span className="block bg-gradient-to-r from-sky-300 to-sky-200 bg-clip-text text-transparent">
                         à la vapeur basse pression
                     </span>
                 </h1>
