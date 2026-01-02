@@ -28,7 +28,8 @@
       "Bash(do echo \"=== $img ===\")",
       "Bash(npx tsc:*)",
       "Bash(dig:*)",
-      "Bash(du:*)"
+      "Bash(du:*)",
+      "Bash(npm uninstall:*)"
     ],
     "deny": [],
     "ask": []

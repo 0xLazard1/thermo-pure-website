@@ -4,7 +4,7 @@ export const StructuredData = () => {
         "@type": "VideoObject",
         "name": "Démonstration de nettoyage vapeur basse pression - THERMO PURE",
         "description": "Découvrez notre technique de nettoyage à la vapeur basse pression en action. Nettoyage efficace et écologique de toitures, façades et terrasses sans produits chimiques.",
-        "thumbnailUrl": "https://thermo-pure.com/logo.avif",
+        "thumbnailUrl": "https://thermo-pure.com/hero-bg.webp",
         "uploadDate": "2024-12-01T00:00:00Z",
         "contentUrl": "https://thermo-pure.com/video_presentation.webm",
         "embedUrl": "https://thermo-pure.com/video_presentation.webm",

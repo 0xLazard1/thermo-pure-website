@@ -1,11 +1,11 @@
-import { Layout } from '../components/components/layout'
-import { StructuredData } from '../components/structured-data'
+import { Layout } from "../components/components/layout";
+import { StructuredData } from "../components/structured-data";
 
 export default function Home() {
   return (
-  <>
-  <StructuredData />
-  <Layout />
-  </>
+    <>
+      <StructuredData />
+      <Layout />
+    </>
   );
 }
