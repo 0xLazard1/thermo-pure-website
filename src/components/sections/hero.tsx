@@ -9,7 +9,7 @@ export const HeroSection = () => {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/hero-bg.avif"
+                    src="/nettoyage-facade-toiture-vapeur-thermo-pure.avif"
                     alt="Nettoyage de façade et toiture à la vapeur basse pression - THERMO PURE"
                     fill
                     priority

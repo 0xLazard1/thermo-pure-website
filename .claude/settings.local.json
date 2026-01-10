@@ -29,7 +29,10 @@
       "Bash(npx tsc:*)",
       "Bash(dig:*)",
       "Bash(du:*)",
-      "Bash(npm uninstall:*)"
+      "Bash(npm uninstall:*)",
+      "Bash(npx lighthouse:*)",
+      "Bash(identify:*)",
+      "Bash(sips:*)"
     ],
     "deny": [],
     "ask": []

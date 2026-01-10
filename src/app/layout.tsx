@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   title:
-    "THERMO PURE - Nettoyage Façades, Toitures  à Niort (79) - Deux-Sèvres",
+    "THERMO PURE - Nettoyage Façades, Toitures à Niort (79) - Deux-Sèvres",
   description:
     "Spécialiste du nettoyage extérieur à la vapeur basse pression : toitures, façades, terrasses et tout type d'extérieur. Intervention en Nouvelle-Aquitaine et départements voisins (79, 17, 85, 86). Devis gratuit. SIRET: 991 013 038 00013",
   keywords: [
@@ -89,9 +89,10 @@ export const metadata: Metadata = {
       { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
       { url: "/favicon.png", sizes: "48x48", type: "image/png" },
+      { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
     ],
     shortcut: "/favicon.ico",
-    apple: "/favicon.png",
+    apple: "/favicon-192.png",
   },
   robots: {
     index: true,
@@ -144,10 +145,10 @@ export default function RootLayout({
               logo: "https://thermo-pure.com/logo.webp",
               image: [
                 "https://thermo-pure.com/logo.webp",
-                "https://thermo-pure.com/hero-bg.webp",
-                "https://thermo-pure.com/Image_Nettoyage_1.webp",
-                "https://thermo-pure.com/Image_Nettoyage_2.webp",
-                "https://thermo-pure.com/Image_Nettoyage_3.webp",
+                "https://thermo-pure.com/nettoyage-facade-toiture-vapeur-thermo-pure.webp",
+                "https://thermo-pure.com/nettoyage-toiture-avant-apres-niort.webp",
+                "https://thermo-pure.com/nettoyage-facade-pierre-deux-sevres.webp",
+                "https://thermo-pure.com/nettoyage-terrasse-exterieure-thermo-pure.webp",
               ],
               description:
                 "Spécialiste du nettoyage extérieur à la vapeur basse pression : toitures, façades, terrasses et tout type d'extérieur. Intervention en Nouvelle-Aquitaine et départements voisins (79, 17, 85, 86). Devis gratuit. SIRET: 991 013 038 00013",
