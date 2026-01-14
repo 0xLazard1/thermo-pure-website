@@ -97,7 +97,7 @@ public/
 ```yaml
 metadata_location: src/app/layout.tsx
 title: "Nettoyage Toiture & Façade Niort (79) | Vapeur Basse Pression"
-description: "N'abîmez pas votre maison avec la haute pression ! Nettoyage vapeur toiture & façade à Niort (79). Élimine mousses et lichens sans produits chimiques. Devis Gratuit."
+description: "N'abîmez pas votre maison avec la haute pression ! Nettoyage vapeur toiture & façade à Niort (79). Sans produits chimiques. Devis Gratuit."
 structured_data:
   - type: LocalBusiness
     location: layout.tsx (inline script)

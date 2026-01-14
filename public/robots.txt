@@ -13,7 +13,11 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-# Yahoo / DuckDuckGo (utilise Yahoo)
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Yahoo
 User-agent: Slurp
 Allow: /
 

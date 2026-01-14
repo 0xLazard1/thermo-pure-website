@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   title: "Nettoyage Toiture & Façade Niort (79) | Vapeur Basse Pression",
   description:
-    "N'abîmez pas votre maison avec la haute pression ! Nettoyage vapeur toiture & façade à Niort (79). Élimine mousses et lichens sans produits chimiques. Devis Gratuit.",
+    "N'abîmez pas votre maison avec la haute pression ! Nettoyage vapeur toiture & façade à Niort (79). Sans produits chimiques. Devis Gratuit.",
   keywords: [
     // Mots-clés principaux
     "nettoyage façade Niort",
@@ -109,7 +109,7 @@ export const metadata: Metadata = {
     url: "https://thermo-pure.com",
     title: "Nettoyage Toiture & Façade Niort (79) | Vapeur Basse Pression",
     description:
-      "N'abîmez pas votre maison avec la haute pression ! Nettoyage vapeur toiture & façade à Niort (79). Élimine mousses et lichens sans produits chimiques. Devis Gratuit.",
+      "N'abîmez pas votre maison avec la haute pression ! Nettoyage vapeur toiture & façade à Niort (79). Sans produits chimiques. Devis Gratuit.",
     siteName: "THERMO PURE",
     images: ["https://thermo-pure.com/logo.webp"],
   },
@@ -117,7 +117,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nettoyage Toiture & Façade Niort (79) | Vapeur Basse Pression",
     description:
-      "N'abîmez pas votre maison avec la haute pression ! Nettoyage vapeur toiture & façade à Niort (79). Élimine mousses et lichens sans produits chimiques. Devis Gratuit.",
+      "N'abîmez pas votre maison avec la haute pression ! Nettoyage vapeur toiture & façade à Niort (79). Sans produits chimiques. Devis Gratuit.",
     images: ["https://thermo-pure.com/logo.webp"],
   },
   other: {
@@ -150,7 +150,7 @@ export default function RootLayout({
                 "https://thermo-pure.com/nettoyage-terrasse-exterieure-thermo-pure.webp",
               ],
               description:
-                "N'abîmez pas votre maison avec la haute pression ! Nettoyage vapeur toiture & façade à Niort (79). Élimine mousses et lichens sans produits chimiques. Devis Gratuit.",
+                "N'abîmez pas votre maison avec la haute pression ! Nettoyage vapeur toiture & façade à Niort (79). Sans produits chimiques. Devis Gratuit.",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Niort",
