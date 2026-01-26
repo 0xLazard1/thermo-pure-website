@@ -209,9 +209,8 @@ export default function RootLayout({
                 },
               ],
               sameAs: [
-                "https://www.facebook.com/thermopure",
-                "https://www.instagram.com/thermopure",
-                "https://www.tiktok.com/@thermopure",
+                "https://www.facebook.com/people/Thermopure/61584787320006/",
+                "https://www.instagram.com/thermo_pure",
               ],
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
