@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  title: "Nettoyage Toiture & Façade Niort (79) | Vapeur Basse Pression",
+  title: "THERMO PURE - Nettoyage Vapeur Toiture & Façade Niort (79)",
   description:
-    "N'abîmez pas votre maison avec la haute pression ! Nettoyage vapeur toiture & façade à Niort (79). Sans produits chimiques. Devis Gratuit.",
+    "THERMO PURE : nettoyage vapeur basse pression de toitures, façades et terrasses à Niort (79). Sans produits chimiques, sans abîmer. Devis Gratuit.",
   keywords: [
     // Mots-clés principaux
     "nettoyage façade Niort",
@@ -107,17 +107,17 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     url: "https://thermo-pure.com",
-    title: "Nettoyage Toiture & Façade Niort (79) | Vapeur Basse Pression",
+    title: "THERMO PURE - Nettoyage Vapeur Toiture & Façade Niort (79)",
     description:
-      "N'abîmez pas votre maison avec la haute pression ! Nettoyage vapeur toiture & façade à Niort (79). Sans produits chimiques. Devis Gratuit.",
+      "THERMO PURE : nettoyage vapeur basse pression de toitures, façades et terrasses à Niort (79). Sans produits chimiques, sans abîmer. Devis Gratuit.",
     siteName: "THERMO PURE",
     images: ["https://thermo-pure.com/logo.webp"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nettoyage Toiture & Façade Niort (79) | Vapeur Basse Pression",
+    title: "THERMO PURE - Nettoyage Vapeur Toiture & Façade Niort (79)",
     description:
-      "N'abîmez pas votre maison avec la haute pression ! Nettoyage vapeur toiture & façade à Niort (79). Sans produits chimiques. Devis Gratuit.",
+      "THERMO PURE : nettoyage vapeur basse pression de toitures, façades et terrasses à Niort (79). Sans produits chimiques, sans abîmer. Devis Gratuit.",
     images: ["https://thermo-pure.com/logo.webp"],
   },
   other: {
@@ -150,7 +150,7 @@ export default function RootLayout({
                 "https://thermo-pure.com/nettoyage-terrasse-exterieure-thermo-pure.webp",
               ],
               description:
-                "N'abîmez pas votre maison avec la haute pression ! Nettoyage vapeur toiture & façade à Niort (79). Sans produits chimiques. Devis Gratuit.",
+                "THERMO PURE : nettoyage vapeur basse pression de toitures, façades et terrasses à Niort (79). Sans produits chimiques, sans abîmer. Devis Gratuit.",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Niort",
