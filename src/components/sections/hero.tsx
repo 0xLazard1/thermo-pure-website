@@ -57,6 +57,22 @@ export const HeroSection = () => {
 
                 {/* Trust Badges */}
                 <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 text-white/80 text-sm">
+                    <a
+                        href="https://www.google.fr/maps/place/THERMO+PURE/@45.2765002,-2.6467083,7z/data=!3m1!4b1!4m6!3m5!1s0x5a601b9e7c64eb7:0xdb52701b873347d8!8m2!3d45.3069112!4d-0.0070925!16s%2Fg%2F11yr00_mfx?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 hover:text-white transition-colors"
+                    >
+                        <div className="flex items-center gap-0.5">
+                            {[...Array(5)].map((_, i) => (
+                                <svg key={i} className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            ))}
+                        </div>
+                        <span className="font-semibold text-white">5/5</span>
+                        <span>Google</span>
+                    </a>
                     <div className="flex items-center gap-2">
                         <span className="text-cyan-300 text-xl">📍</span>
                         <span>Nouvelle-Aquitaine 79, 16, 17, 86</span>

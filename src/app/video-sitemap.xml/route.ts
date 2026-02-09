@@ -9,7 +9,7 @@ export async function GET() {
   <url>
     <loc>${baseUrl}</loc>
     <video:video>
-      <video:thumbnail_loc>${baseUrl}/hero-bg.webp</video:thumbnail_loc>
+      <video:thumbnail_loc>${baseUrl}/nettoyage-facade-toiture-vapeur-thermo-pure.webp</video:thumbnail_loc>
       <video:title>Nettoyage à la vapeur basse pression - THERMO PURE Niort</video:title>
       <video:description>Découvrez notre technique de nettoyage à la vapeur basse pression pour toitures, façades et terrasses. THERMO PURE, spécialiste du nettoyage extérieur écologique en Nouvelle-Aquitaine (79, 17, 85, 86).</video:description>
       <video:content_loc>${baseUrl}/video_presentation.webm</video:content_loc>

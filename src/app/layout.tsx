@@ -264,7 +264,7 @@ export default function RootLayout({
             });
           `}
         </Script>
-        <main>{children}</main>
+        {children}
       </body>
     </html>
   );

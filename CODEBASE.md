@@ -96,8 +96,8 @@ public/
 ## SEO_CONFIGURATION
 ```yaml
 metadata_location: src/app/layout.tsx
-title: "Nettoyage Toiture & Façade Niort (79) | Vapeur Basse Pression"
-description: "N'abîmez pas votre maison avec la haute pression ! Nettoyage vapeur toiture & façade à Niort (79). Sans produits chimiques. Devis Gratuit."
+title: "THERMO PURE - Nettoyage Vapeur Toiture & Façade Niort (79)"
+description: "THERMO PURE : nettoyage vapeur basse pression de toitures, façades et terrasses à Niort (79). Sans produits chimiques, sans abîmer. Devis Gratuit."
 structured_data:
   - type: LocalBusiness
     location: layout.tsx (inline script)
@@ -173,6 +173,7 @@ responsive_breakpoints: [sm: 640px, md: 768px, lg: 1024px, xl: 1280px]
 sections:
   - id: "presentation"
   - id: "examples"
+  - id: "vapeur"
   - id: "devis"
   - id: "about"
   - id: "faq"
@@ -209,6 +210,8 @@ lint: npm run lint      # ESLint
 - images.qualities warning (Next.js 16 preparation)
 - baseline-browser-mapping outdated (dev dependency)
 - Google favicon: may take time to update after re-indexation
+- mentions-legales says "no tracking cookies" but Google Analytics is active (legal inconsistency)
+- OG image is logo.webp (200x200) - should be 1200x630 for optimal social sharing
 ```
 
 ## MODIFICATION_GUIDELINES

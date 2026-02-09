@@ -10,28 +10,28 @@ import { ContactSection } from "../sections/contact"
 export const Page = () => {
     return (
         <div className="w-full">
-            {/* 1. Hero Section - Accroche principale avec CTA */}
+            {/* 1. Hero - Accroche principale avec CTA */}
             <HeroSection />
 
-            {/* 1.5 Vidéo - Démonstration du nettoyage */}
-            <ExamplesSection />
-
-            {/* 2. Présentation - Les 4 services */}
+            {/* 2. Présentation - Ce qu'on fait (services) */}
             <PresentationSection />
 
-            {/* 3. Nettoyage Vapeur Basse Pression - Section dédiée à votre différenciateur */}
+            {/* 3. Vapeur - Pourquoi nous (différenciateur) */}
             <SteamCleaningSection />
 
-            {/* 4. Devis - CTA quand l'intérêt est maximum */}
+            {/* 4. Exemples - Preuves visuelles (vidéo + galerie) */}
+            <ExamplesSection />
+
+            {/* 5. Devis - CTA quand l'intérêt est maximum */}
             <DevisSection />
 
-            {/* 7. À propos - Humaniser après avoir convaincu */}
-            <AboutSection />
-
-            {/* 8. FAQ - Lever dernières objections */}
+            {/* 6. FAQ - Lever les objections */}
             <FAQSection />
 
-            {/* 9. Contact Final - Formulaire complet */}
+            {/* 7. À propos - Confiance / humaniser */}
+            <AboutSection />
+
+            {/* 8. Contact Final - Formulaire complet */}
             <ContactSection />
         </div>
     )
