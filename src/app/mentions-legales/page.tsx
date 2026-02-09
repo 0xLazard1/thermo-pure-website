@@ -231,9 +231,30 @@ export default function MentionsLegalesPage() {
                 5. Cookies
               </h2>
               <p className="text-gray-700 leading-relaxed">
-                Ce site n&apos;utilise pas de cookies de tracking ou de
-                publicité. Seuls des cookies techniques strictement nécessaires
-                au fonctionnement du site peuvent être utilisés.
+                Ce site utilise Google Analytics, un service d&apos;analyse
+                d&apos;audience fourni par Google LLC, qui dépose des cookies
+                (notamment <code className="bg-gray-100 px-1 rounded">_ga</code>{" "}
+                et <code className="bg-gray-100 px-1 rounded">_gid</code>) afin
+                de mesurer la fréquentation du site de manière anonyme. Ces
+                données sont utilisées uniquement à des fins statistiques pour
+                améliorer notre site.
+              </p>
+              <p className="text-gray-700 leading-relaxed mt-4">
+                Aucun cookie publicitaire n&apos;est utilisé. Des cookies
+                techniques strictement nécessaires au fonctionnement du site
+                peuvent également être utilisés.
+              </p>
+              <p className="text-gray-700 leading-relaxed mt-4">
+                Pour plus d&apos;informations sur les cookies Google Analytics :{" "}
+                <a
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sky-600 hover:text-sky-700"
+                >
+                  Politique de confidentialité de Google
+                </a>
+                .
               </p>
             </section>
 
@@ -272,7 +293,7 @@ export default function MentionsLegalesPage() {
             {/* Date de mise à jour */}
             <section className="border-t border-gray-200 pt-8">
               <p className="text-sm text-gray-500">
-                <strong>Dernière mise à jour :</strong> Décembre 2025
+                <strong>Dernière mise à jour :</strong> Février 2026
               </p>
             </section>
           </div>
