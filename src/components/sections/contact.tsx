@@ -46,6 +46,15 @@ export const ContactSection = () => {
 
             setSubmitted(true)
             setFormData({ name: "", email: "", phone: "", subject: "", message: "" })
+
+            // Conversion tracking Google Ads
+            const w = window as unknown as { gtag?: (...args: unknown[]) => void }
+            if (typeof w.gtag === 'function') {
+                w.gtag('event', 'generate_lead', {
+                    event_category: 'contact',
+                    event_label: 'formulaire_devis',
+                })
+            }
         } catch (error) {
             console.error('Erreur:', error)
             alert('Une erreur est survenue lors de l\'envoi du message. Veuillez réessayer ou nous contacter directement par téléphone.')
