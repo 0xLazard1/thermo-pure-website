@@ -20,6 +20,12 @@ export const metadata: Metadata = {
     "THERMO PURE : nettoyage vapeur basse pression de toitures, façades et terrasses à Niort (79). Sans produits chimiques, sans abîmer. Devis Gratuit.",
   keywords: [
     // Mots-clés principaux
+    "nettoyage toiture 79",
+    "nettoyage toiture niort",
+    "nettoyage toiture deux-sèvre",
+    "nettoyage vapeur 79",
+    "nettoyage écologique toiture 79",
+    "nettoyage écologique facade 79",
     "nettoyage façade Niort",
     "nettoyage toiture Deux-Sèvres",
     "nettoyage vapeur basse pression",
