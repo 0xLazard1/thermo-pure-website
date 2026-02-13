@@ -17,34 +17,42 @@ export const StructuredData = () => {
         "mainEntity": [
             {
                 "@type": "Question",
+                "name": "Pourquoi choisir la vapeur basse pression plutôt que le karcher ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le karcher haute pression casse les tuiles, érode les matériaux et réduit la durée de vie de votre toiture. La vapeur basse pression (maximum 70 bars) nettoie en profondeur grâce à la chaleur, sans abîmer les surfaces. Le résultat est plus durable car la vapeur élimine mousses et lichens à la racine, là où le karcher ne fait que les arracher en surface."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Est-ce que c'est écologique ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, c'est notre engagement principal. La vapeur basse pression n'utilise aucun produit chimique : uniquement de l'eau chauffée à haute température. Pas de javel, pas d'anti-mousse, pas de produits polluants. Vos sols, vos plantations et les nappes phréatiques sont préservés."
+                }
+            },
+            {
+                "@type": "Question",
                 "name": "Quels types de surfaces pouvez-vous nettoyer ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Nous intervenons sur tous types de surfaces : façades en crépi, pierre, brique, bac acier, tuiles terre cuite, béton, ardoise, fibrociment non amianté, terrasses, cours, murs extérieurs et intérieurs. Nous adaptons nos techniques selon les matériaux pour garantir un résultat optimal."
+                    "text": "Nous intervenons sur les toitures (tuiles terre cuite, ardoise, béton, fibrociment non amianté, bac acier), les façades (crépi, pierre, brique), les terrasses, les murs extérieurs et intérieurs. Nous adaptons la pression et la température selon chaque matériau."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Le nettoyeur vapeur basse pression peut-il endommager ma façade ?",
+                "name": "La vapeur basse pression peut-elle endommager ma toiture ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Non, nous utilisons des équipements professionnels avec réglage de pression et de température adapté à chaque surface. Nos techniciens sont formés pour identifier le bon niveau de pression et la distance appropriée pour nettoyer efficacement sans abîmer vos revêtements. (Nous travaillons maximum à 70 bars de pression)"
+                    "text": "Non. Nous travaillons à maximum 70 bars de pression avec un réglage de température adapté à chaque surface. Nos techniciens sont formés pour identifier le bon niveau de pression et la distance appropriée. C'est justement l'avantage par rapport au karcher : on nettoie sans fragiliser."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Combien de temps faut-il pour nettoyer une façade ?",
+                "name": "Quelle est la meilleure période pour nettoyer sa toiture ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "La durée dépend de la taille de la surface, du niveau d'encrassement et du type de traitement nécessaire, ainsi que de l'accessibilité"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Intervenez-vous en urgence ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Oui, nous proposons un service d'intervention d'urgence pour les professionnels (restaurants, commerces, bureaux) qui ont besoin d'un nettoyage rapide. Contactez-nous directement par téléphone pour vérifier nos disponibilités et obtenir un devis express."
+                    "text": "Il n'existe pas de saison spécifique : un entretien régulier est nécessaire toute l'année pour prévenir les dégradations causées par les mousses et les conditions climatiques. Cependant, le printemps et l'automne sont des périodes idéales pour traiter les accumulations hivernales ou préparer l'hiver."
                 }
             },
             {
@@ -57,18 +65,10 @@ export const StructuredData = () => {
             },
             {
                 "@type": "Question",
-                "name": "Êtes-vous assurés et certifiés ?",
+                "name": "Où intervenez-vous ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Oui, nous sommes entièrement assurés (responsabilité civile professionnelle) et nos techniciens sont formés aux techniques de nettoyage professionnel. Nous respectons toutes les normes de sécurité et utilisons des équipements certifiés."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Quelle est la meilleure période pour nettoyer votre patrimoine ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Il n'existe pas de saison spécifique pour entretenir votre toiture : un entretien régulier et efficace est nécessaire toute l'année afin de prévenir les dégradations importantes causées par les conditions climatiques, notamment hivernales."
+                    "text": "Nous intervenons principalement dans les Deux-Sèvres (79) autour de Niort, et dans les départements voisins : Charente-Maritime (17), Vendée (85) et Vienne (86). Contactez-nous pour vérifier si votre commune est dans notre zone d'intervention."
                 }
             }
         ]

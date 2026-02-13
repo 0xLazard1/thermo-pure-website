@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { getAllPosts } from '@/lib/blog'
 
 const baseUrl = 'https://thermo-pure.com'
 
@@ -6,6 +7,20 @@ const baseUrl = 'https://thermo-pure.com'
 const buildDate = new Date().toISOString().split('T')[0]
 
 export async function GET() {
+  const posts = getAllPosts()
+
+  const blogUrls = posts
+    .map(
+      (post) => `
+  <url>
+    <loc>${baseUrl}/blog/${post.slug}</loc>
+    <lastmod>${post.date}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>`
+    )
+    .join('')
+
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -14,6 +29,12 @@ export async function GET() {
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>${baseUrl}/blog</loc>
+    <lastmod>${buildDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>${blogUrls}
   <url>
     <loc>${baseUrl}/mentions-legales</loc>
     <lastmod>${buildDate}</lastmod>

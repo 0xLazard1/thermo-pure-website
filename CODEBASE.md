@@ -21,9 +21,12 @@ framework: Next.js 15.5.7
 runtime: React 19.1.0
 language: TypeScript 5
 styling: TailwindCSS 3.4.17
-ui_components: [Radix UI, Vaul (drawer), Lucide Icons]
+ui_components: [shadcn/ui (Card, Badge, Button, Drawer, Carousel), Radix UI, Vaul, Lucide Icons]
+carousel: embla-carousel-react (via shadcn Carousel)
+blog: [gray-matter (frontmatter), react-markdown, remark-gfm]
 email_service: Resend
 image_optimization: Sharp
+analytics: Google Analytics (GA4) + Google Ads conversion tracking
 build: Turbopack
 deployment: Custom server (nginx)
 ```
@@ -37,37 +40,52 @@ src/
 │   ├── globals.css             # GLOBAL_STYLES: tailwind imports
 │   ├── manifest.ts             # PWA_MANIFEST
 │   ├── api/
-│   │   └── contact/route.ts    # API_ENDPOINT: POST /api/contact (Resend email)
-│   ├── sitemap.xml/route.ts    # DYNAMIC_SITEMAP: generates XML
+│   │   └── contact/route.ts    # API_ENDPOINT: POST /api/contact (Resend email + Google Ads conversion)
+│   ├── sitemap.xml/route.ts    # DYNAMIC_SITEMAP: generates XML (includes blog URLs)
 │   ├── image-sitemap.xml/route.ts  # IMAGE_SITEMAP: 11 images
 │   ├── video-sitemap.xml/route.ts  # VIDEO_SITEMAP: 1 video
-│   ├── mentions-legales/page.tsx   # LEGAL_PAGE
-│   └── politique-confidentialite/page.tsx  # PRIVACY_PAGE
+│   ├── blog/
+│   │   ├── layout.tsx          # BLOG_LAYOUT: BlogHeader + main content + Footer
+│   │   ├── page.tsx            # BLOG_LISTING: grid of BlogCard, BreadcrumbList JSON-LD
+│   │   └── [slug]/page.tsx     # BLOG_ARTICLE: dynamic page, Article + BreadcrumbList JSON-LD
+│   ├── mentions-legales/page.tsx   # LEGAL_PAGE (RGPD, Google Analytics cookies)
+│   └── politique-confidentialite/page.tsx  # PRIVACY_PAGE (RGPD, Google Analytics cookies)
+├── content/
+│   └── blog/
+│       └── nettoyage-toiture-79.md  # BLOG_ARTICLE: markdown with frontmatter
+├── lib/
+│   └── blog.ts                 # BLOG_LIB: getAllPosts, getPostBySlug, getAllSlugs
 ├── components/
 │   ├── components/
 │   │   ├── layout.tsx          # MAIN_LAYOUT: Header + Page + Footer + ScrollToTop + StickyCtaMobile
-│   │   ├── header.tsx          # HEADER: navigation, logo, mobile drawer
-│   │   ├── footer.tsx          # FOOTER: contact info, social links, legal links
+│   │   ├── header.tsx          # HEADER: nav (Présentation|Exemples|Devis|Qui sommes-nous|Blog|FAQ|Contact)
+│   │   ├── footer.tsx          # FOOTER: contact info, social links, legal links, blog link
 │   │   └── page.tsx            # PAGE_CONTENT: assembles all sections in order
 │   ├── sections/
 │   │   ├── hero.tsx            # SECTION_1: main CTA, background image/video
-│   │   ├── examples.tsx        # SECTION_2: video demonstration, before/after gallery
-│   │   ├── presentation.tsx    # SECTION_3: 4 services cards (facades, toitures, terrasses, autres)
+│   │   ├── examples.tsx        # SECTION_2: video + shadcn Carousel gallery (embla, manual navigation)
+│   │   ├── presentation.tsx    # SECTION_3: 3 service cards (shadcn Card), data-driven
 │   │   ├── steam-cleaning.tsx  # SECTION_4: differentiator explanation (vapeur basse pression)
-│   │   ├── devis.tsx           # SECTION_5: quote CTA section
+│   │   ├── devis.tsx           # SECTION_5: 3-step quote process (shadcn Card)
 │   │   ├── about.tsx           # SECTION_6: about the company
-│   │   ├── faq-fixed.tsx       # SECTION_7: FAQ accordion (7 questions)
-│   │   └── contact.tsx         # SECTION_8: contact form (name, email, phone, subject, message)
+│   │   ├── faq-fixed.tsx       # SECTION_7: FAQ accordion (7 questions, vapeur/toiture/écologie focus)
+│   │   └── contact.tsx         # SECTION_8: contact form + Google Ads generate_lead tracking
+│   ├── blog/
+│   │   ├── blog-header.tsx     # BLOG_HEADER: simplified header for blog pages
+│   │   ├── blog-card.tsx       # BLOG_CARD: article card for listing (shadcn Card + Badge)
+│   │   ├── blog-article.tsx    # BLOG_ARTICLE: markdown renderer (react-markdown + remark-gfm)
+│   │   └── blog-cta.tsx        # BLOG_CTA: devis + "Voir nos réalisations" buttons
 │   ├── ui/
-│   │   ├── button.tsx          # UI_BUTTON: variant-based button component
-│   │   ├── card.tsx            # UI_CARD: card container components
+│   │   ├── button.tsx          # UI_BUTTON: variant-based button component (shadcn)
+│   │   ├── card.tsx            # UI_CARD: Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter (shadcn)
+│   │   ├── carousel.tsx        # UI_CAROUSEL: Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext (shadcn/embla)
 │   │   ├── drawer.tsx          # UI_DRAWER: mobile navigation drawer (Vaul)
-│   │   ├── input.tsx           # UI_INPUT: form input
-│   │   ├── textarea.tsx        # UI_TEXTAREA: form textarea
-│   │   ├── label.tsx           # UI_LABEL: form label
-│   │   ├── badge.tsx           # UI_BADGE: badge component
+│   │   ├── input.tsx           # UI_INPUT: form input (shadcn)
+│   │   ├── textarea.tsx        # UI_TEXTAREA: form textarea (shadcn)
+│   │   ├── label.tsx           # UI_LABEL: form label (shadcn)
+│   │   ├── badge.tsx           # UI_BADGE: badge component (shadcn)
 │   │   ├── scroll-to-top.tsx   # UI_SCROLL: floating scroll-to-top button
-│   │   └── sticky-cta-mobile.tsx  # UI_STICKY_CTA: fixed mobile call button
+│   │   └── sticky-cta-mobile.tsx  # UI_STICKY_CTA: fixed mobile/desktop devis button
 │   └── structured-data.tsx     # SEO_SCHEMA: VideoObject + FAQPage JSON-LD
 public/
 ├── favicon.ico                 # FAVICON: 48x48 ICO format
@@ -105,38 +123,53 @@ structured_data:
   - type: VideoObject
     location: src/components/structured-data.tsx
   - type: FAQPage
-    location: src/components/structured-data.tsx
+    location: src/components/structured-data.tsx (vapeur/toiture/écologie focus)
+  - type: Article
+    location: src/app/blog/[slug]/page.tsx (per article, dynamic)
+  - type: BreadcrumbList
+    location: src/app/blog/page.tsx + src/app/blog/[slug]/page.tsx
 sitemaps:
-  - /sitemap.xml (dynamic, 3 pages)
+  - /sitemap.xml (dynamic, includes homepage + blog listing + all blog articles + legal pages)
   - /sitemap-index.xml (static fallback)
   - /image-sitemap.xml (11 images)
   - /video-sitemap.xml (1 video)
 canonical: https://thermo-pure.com
 robots: index, follow
+blog_seo:
+  - metadata: dynamic title, description, canonical per article
+  - openGraph: type article, publishedTime, authors, images
+  - twitter: summary_large_image card per article
+  - keywords: injected from article frontmatter tags
+  - generateStaticParams: pre-rendered at build time (SSG)
 ```
 
 ## COMPONENT_HIERARCHY
 ```
 RootLayout (layout.tsx)
-└── Home (page.tsx)
-    └── StructuredData
-    └── Layout (components/layout.tsx)
-        ├── Header
-        │   ├── Logo
-        │   ├── Navigation (desktop)
-        │   └── Drawer (mobile)
-        ├── Page (components/page.tsx)
-        │   ├── HeroSection
-        │   ├── ExamplesSection
-        │   ├── PresentationSection
-        │   ├── SteamCleaningSection
-        │   ├── DevisSection
-        │   ├── AboutSection
-        │   ├── FAQSection
-        │   └── ContactSection
-        ├── Footer
-        ├── ScrollToTop
-        └── StickyCtaMobile
+├── Home (page.tsx)
+│   └── StructuredData
+│   └── Layout (components/layout.tsx)
+│       ├── Header (nav: Présentation|Exemples|Devis|Qui sommes-nous|Blog|FAQ|Contact)
+│       │   ├── Logo
+│       │   ├── Navigation (desktop)
+│       │   └── Drawer (mobile)
+│       ├── Page (components/page.tsx)
+│       │   ├── HeroSection
+│       │   ├── ExamplesSection (shadcn Carousel)
+│       │   ├── PresentationSection (shadcn Card, data-driven)
+│       │   ├── SteamCleaningSection
+│       │   ├── DevisSection (shadcn Card)
+│       │   ├── AboutSection
+│       │   ├── FAQSection (vapeur/toiture/écologie)
+│       │   └── ContactSection (+ Google Ads generate_lead)
+│       ├── Footer
+│       ├── ScrollToTop
+│       └── StickyCtaMobile
+└── Blog (blog/layout.tsx)
+    ├── BlogHeader
+    ├── BlogPage (blog/page.tsx) → grid of BlogCard
+    ├── BlogPostPage (blog/[slug]/page.tsx) → BlogArticle + BlogCta
+    └── Footer (shared with main site)
 ```
 
 ## API_ENDPOINTS
@@ -154,6 +187,8 @@ POST /api/contact:
   service: Resend
   env_var: RESEND_API_KEY
   destination: contact@thermo-pure.com
+  side_effects:
+    - Google Ads gtag('event', 'generate_lead') on success
 ```
 
 ## STYLING_CONVENTIONS
@@ -168,9 +203,17 @@ animations: tailwindcss-animate, tw-animate-css
 responsive_breakpoints: [sm: 640px, md: 768px, lg: 1024px, xl: 1280px]
 ```
 
-## NAVIGATION_ANCHORS
+## NAVIGATION
 ```yaml
-sections:
+header_links:
+  - label: "Présentation"  → /#presentation
+  - label: "Exemples"      → /#examples
+  - label: "Devis"         → /#devis
+  - label: "Qui sommes-nous" → /#about
+  - label: "Blog"          → /blog (page route)
+  - label: "FAQ"           → /#faq
+  - label: "Contact"       → /#contact
+section_anchors:
   - id: "presentation"
   - id: "examples"
   - id: "vapeur"
@@ -205,12 +248,28 @@ start: npm run start    # Start production server
 lint: npm run lint      # ESLint
 ```
 
+## BLOG_SYSTEM
+```yaml
+content_directory: src/content/blog/
+format: Markdown with YAML frontmatter (gray-matter)
+rendering: react-markdown + remark-gfm
+frontmatter_fields:
+  required: [title, description, date, slug]
+  optional: [thumbnail, thumbnailAlt, tags, author]
+routes:
+  listing: /blog (static)
+  article: /blog/[slug] (SSG via generateStaticParams)
+adding_article:
+  1. Create src/content/blog/[slug].md with frontmatter
+  2. Add thumbnail image to public/
+  3. Build will auto-generate the page and update sitemap
+```
+
 ## KNOWN_ISSUES
 ```yaml
 - images.qualities warning (Next.js 16 preparation)
 - baseline-browser-mapping outdated (dev dependency)
 - Google favicon: may take time to update after re-indexation
-- mentions-legales says "no tracking cookies" but Google Analytics is active (legal inconsistency)
 - OG image is logo.webp (200x200) - should be 1200x630 for optimal social sharing
 ```
 
@@ -219,7 +278,12 @@ lint: npm run lint      # ESLint
 adding_page:
   1. Create src/app/[slug]/page.tsx
   2. Add to sitemap.xml/route.ts
-  3. Update navigation in header.tsx if needed
+  3. Update navigation in header.tsx and footer.tsx if needed
+
+adding_blog_article:
+  1. Create src/content/blog/[slug].md with frontmatter (title, description, date, slug, thumbnail, tags)
+  2. Add thumbnail image to public/
+  3. Sitemap updates automatically at build
 
 adding_section:
   1. Create src/components/sections/[name].tsx
@@ -229,10 +293,11 @@ adding_section:
 modifying_seo:
   1. Metadata: src/app/layout.tsx (metadata export)
   2. Structured data: layout.tsx (LocalBusiness) or structured-data.tsx (Video, FAQ)
-  3. Sitemaps: respective route.ts files
+  3. Blog SEO: src/app/blog/[slug]/page.tsx (Article schema, OG, Twitter)
+  4. Sitemaps: respective route.ts files
 
 styling:
   1. Use TailwindCSS classes
   2. Follow existing color scheme (sky-600/700 primary)
-  3. Use existing UI components from src/components/ui/
+  3. Use shadcn/ui components from src/components/ui/
 ```

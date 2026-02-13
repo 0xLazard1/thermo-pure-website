@@ -1,4 +1,29 @@
 import Image from 'next/image'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+
+const services = [
+    {
+        title: "Nettoyage de Toitures",
+        description: "Nettoyage à la vapeur basse pression, sans produits agressifs, pour traiter en profondeur mousses, algues, lichens et dépôts de pollution. Une solution écologique et maîtrisée.",
+        image: "/nettoyage-terrasse-exterieure-thermo-pure.avif",
+        alt: "Nettoyage de toiture à la vapeur",
+        gradient: "from-sky-600 to-sky-400",
+    },
+    {
+        title: "Nettoyage de Façades",
+        description: "Nettoyage extérieur à la vapeur de façades en enduit, pierre, brique ou bardage. Élimination des mousses, taches noires et pollution pour redonner de l\u0027éclat à vos murs.",
+        image: "/nettoyage-facade-vapeur-basse-pression.avif",
+        alt: "Nettoyage de façade à la vapeur",
+        gradient: "from-sky-500 to-sky-400",
+    },
+    {
+        title: "Nettoyage de Terrasses & Extérieurs",
+        description: "Nettoyage de terrasses, allées, cours, plages de piscine et espaces extérieurs à la vapeur basse pression. Résultat propre et homogène sans abîmer.",
+        image: "/nettoyage-terrasse-vapeur-basse-pression.avif",
+        alt: "Nettoyage de terrasse à la vapeur",
+        gradient: "from-sky-400 to-cyan-400",
+    },
+]
 
 export const PresentationSection = () => {
     return (
@@ -20,73 +45,36 @@ export const PresentationSection = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                    {/* Service 1 - Nettoyage de Toitures */}
-                    <div className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-sky-100 hover:border-sky-300 relative">
-                        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-sky-600 to-sky-400"></div>
-                        <div className="relative h-48 overflow-hidden">
-                            <Image
-                                src="/nettoyage-terrasse-exterieure-thermo-pure.avif"
-                                alt="Nettoyage de toiture à la vapeur"
-                                width={400}
-                                height={300}
-                                loading="lazy"
-                                quality={85}
-                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                            />
-                        </div>
-                        <div className="p-8">
-                            <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-sky-700 transition-colors">Nettoyage de Toitures</h3>
-                            <p className="text-gray-600 text-sm leading-relaxed">
-                                Nettoyage à la vapeur basse pression, sans produits agressifs, pour traiter en profondeur mousses, algues, lichens et dépôts de pollution. Une solution écologique et maîtrisée.
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Service 2 - Nettoyage de Façades */}
-                    <div className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-sky-100 hover:border-sky-300 relative">
-                        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-sky-500 to-sky-400"></div>
-                        <div className="relative h-48 overflow-hidden">
-                            <Image
-                                src="/nettoyage-facade-vapeur-basse-pression.avif"
-                                alt="Nettoyage de façade à la vapeur"
-                                width={400}
-                                height={300}
-                                loading="lazy"
-                                quality={85}
-                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                            />
-                        </div>
-                        <div className="p-8">
-                            <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-sky-700 transition-colors">Nettoyage de Façades</h3>
-                            <p className="text-gray-600 text-sm leading-relaxed">
-                                Nettoyage extérieur à la vapeur de façades en enduit, pierre, brique ou bardage. Élimination des mousses, taches noires et pollution pour redonner de l&apos;éclat à vos murs.
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Service 3 - Nettoyage de Terrasses & Extérieurs */}
-                    <div className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-sky-100 hover:border-sky-300 relative">
-                        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-sky-400 to-cyan-400"></div>
-                        <div className="relative h-48 overflow-hidden">
-                            <Image
-                                src="/nettoyage-terrasse-vapeur-basse-pression.avif"
-                                alt="Nettoyage de terrasse à la vapeur"
-                                width={400}
-                                height={300}
-                                loading="lazy"
-                                quality={85}
-                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                            />
-                        </div>
-                        <div className="p-8">
-                            <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-sky-700 transition-colors">Nettoyage de Terrasses & Extérieurs</h3>
-                            <p className="text-gray-600 text-sm leading-relaxed">
-                                Nettoyage de terrasses, allées, cours, plages de piscine et espaces extérieurs à la vapeur basse pression. Résultat propre et homogène sans abîmer.
-                            </p>
-                        </div>
-                    </div>
+                    {services.map((service) => (
+                        <Card
+                            key={service.title}
+                            className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-sky-100 hover:border-sky-300 relative"
+                        >
+                            <div className={`absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r ${service.gradient}`} />
+                            <div className="relative h-48 overflow-hidden">
+                                <Image
+                                    src={service.image}
+                                    alt={service.alt}
+                                    width={400}
+                                    height={300}
+                                    loading="lazy"
+                                    quality={85}
+                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                />
+                            </div>
+                            <CardHeader>
+                                <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-sky-700 transition-colors">
+                                    {service.title}
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <p className="text-gray-600 text-sm leading-relaxed">
+                                    {service.description}
+                                </p>
+                            </CardContent>
+                        </Card>
+                    ))}
                 </div>
-
             </div>
         </section>
     )

@@ -1,7 +1,14 @@
 'use client'
-import { useState, useEffect } from 'react'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useState, useCallback, useEffect } from 'react'
 import Image from 'next/image'
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselPrevious,
+    CarouselNext,
+    type CarouselApi,
+} from '@/components/ui/carousel'
 
 const carouselImages = [
     {
@@ -42,28 +49,21 @@ const carouselImages = [
 ]
 
 export const ExamplesSection = () => {
-    const [currentIndex, setCurrentIndex] = useState(0)
-    const [autoPlay, setAutoPlay] = useState(true)
+    const [api, setApi] = useState<CarouselApi>()
+    const [current, setCurrent] = useState(0)
+
+    const onSelect = useCallback(() => {
+        if (!api) return
+        setCurrent(api.selectedScrollSnap())
+    }, [api])
 
     useEffect(() => {
-        if (!autoPlay) return
-        const interval = setInterval(() => {
-            setCurrentIndex((prev) => (prev + 1) % carouselImages.length)
-        }, 6000)
-        return () => clearInterval(interval)
-    }, [autoPlay])
+        if (!api) return
+        onSelect()
+        api.on('select', onSelect)
+        return () => { api.off('select', onSelect) }
+    }, [api, onSelect])
 
-    const nextSlide = () => {
-        setCurrentIndex((prev) => (prev + 1) % carouselImages.length)
-        setAutoPlay(false)
-    }
-
-    const prevSlide = () => {
-        setCurrentIndex((prev) => (prev - 1 + carouselImages.length) % carouselImages.length)
-        setAutoPlay(false)
-    }
-
-    const currentImage = carouselImages[currentIndex]
 
     return (
         <section id="examples" className="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-white via-sky-50/30 to-white relative">
@@ -108,76 +108,44 @@ export const ExamplesSection = () => {
                     </p>
                 </div>
 
-                {/* Carousel Section - Exemples */}
-                <div className="relative">
-                    {/* Main Image with Side Navigation Buttons */}
-                    <div className="flex flex-col md:flex-row justify-center items-center gap-0 md:gap-4 mb-8">
-                        {/* Main Image - Full Size with Enhanced Styling */}
-                        <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl overflow-hidden w-full max-w-4xl order-2 md:order-2">
-                            <div className="relative w-full bg-gradient-to-br from-gray-100 to-gray-50 overflow-hidden flex items-center justify-center p-3 sm:p-4 min-h-[250px] sm:min-h-[300px] md:min-h-[400px]">
-                                <Image
-                                    src={currentImage.src}
-                                    alt={currentImage.alt}
-                                    width={800}
-                                    height={600}
-                                    loading="lazy"
-                                    quality={85}
-                                    className="w-full h-auto object-contain rounded-lg max-h-[250px] sm:max-h-[400px] md:max-h-[600px]"
-                                />
-                            </div>
-                        </div>
+                {/* Carousel Section */}
+                <div className="relative max-w-4xl mx-auto px-12">
+                    <Carousel
+                        setApi={setApi}
+                        opts={{ loop: true }}
+                        className="w-full"
+                    >
+                        <CarouselContent>
+                            {carouselImages.map((image) => (
+                                <CarouselItem key={image.id}>
+                                    <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl overflow-hidden">
+                                        <div className="relative w-full bg-gradient-to-br from-gray-100 to-gray-50 overflow-hidden flex items-center justify-center p-3 sm:p-4 min-h-[250px] sm:min-h-[300px] md:min-h-[400px]">
+                                            <Image
+                                                src={image.src}
+                                                alt={image.alt}
+                                                width={800}
+                                                height={600}
+                                                loading="lazy"
+                                                quality={85}
+                                                className="w-full h-auto object-contain rounded-lg max-h-[250px] sm:max-h-[400px] md:max-h-[600px]"
+                                            />
+                                        </div>
+                                    </div>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                        <CarouselPrevious className="h-10 w-10 bg-sky-600 hover:bg-sky-700 text-white border-none shadow-lg" />
+                        <CarouselNext className="h-10 w-10 bg-sky-600 hover:bg-sky-700 text-white border-none shadow-lg" />
+                    </Carousel>
 
-                        {/* Navigation Buttons - Side by side on mobile, vertical on desktop */}
-                        <div className="flex md:hidden gap-4 order-3 mt-4 mb-4">
-                            {/* Left Navigation Button - Mobile */}
-                            <button
-                                onClick={prevSlide}
-                                className="p-2 sm:p-3 bg-sky-600 hover:bg-sky-700 text-white rounded-full shadow-lg transition-all duration-300 hover:scale-110 flex-shrink-0"
-                                aria-label="Image précédente"
-                            >
-                                <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
-                            </button>
-
-                            {/* Right Navigation Button - Mobile */}
-                            <button
-                                onClick={nextSlide}
-                                className="p-2 sm:p-3 bg-sky-600 hover:bg-sky-700 text-white rounded-full shadow-lg transition-all duration-300 hover:scale-110 flex-shrink-0"
-                                aria-label="Image suivante"
-                            >
-                                <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
-                            </button>
-                        </div>
-
-                        {/* Left Navigation Button - Desktop */}
-                        <button
-                            onClick={prevSlide}
-                            className="hidden md:block p-3 bg-sky-600 hover:bg-sky-700 text-white rounded-full shadow-lg transition-all duration-300 hover:scale-110 flex-shrink-0 order-1"
-                            aria-label="Image précédente"
-                        >
-                            <ChevronLeft className="w-6 h-6" />
-                        </button>
-
-                        {/* Right Navigation Button - Desktop */}
-                        <button
-                            onClick={nextSlide}
-                            className="hidden md:block p-3 bg-sky-600 hover:bg-sky-700 text-white rounded-full shadow-lg transition-all duration-300 hover:scale-110 flex-shrink-0 order-3"
-                            aria-label="Image suivante"
-                        >
-                            <ChevronRight className="w-6 h-6" />
-                        </button>
-                    </div>
-
-                    {/* Indicators - Centered Below */}
-                    <div className="flex items-center justify-center gap-2 sm:gap-3 mb-8">
+                    {/* Indicators */}
+                    <div className="flex items-center justify-center gap-2 sm:gap-3 mt-6 mb-8">
                         {carouselImages.map((_, index) => (
                             <button
                                 key={index}
-                                onClick={() => {
-                                    setCurrentIndex(index)
-                                    setAutoPlay(false)
-                                }}
+                                onClick={() => api?.scrollTo(index)}
                                 className={`rounded-full transition-all duration-300 ${
-                                    index === currentIndex
+                                    index === current
                                         ? 'bg-sky-600 w-6 h-2.5 sm:w-8 sm:h-3'
                                         : 'bg-gray-300 hover:bg-gray-400 w-2.5 h-2.5 sm:w-3 sm:h-3'
                                 }`}
@@ -185,19 +153,19 @@ export const ExamplesSection = () => {
                             />
                         ))}
                     </div>
+                </div>
 
-                    {/* CTA */}
-                    <div className="text-center">
-                        <a
-                            href="#contact"
-                            className="inline-flex items-center px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-4 text-base sm:text-lg font-bold text-white bg-gradient-to-r from-sky-600 to-sky-500 hover:from-sky-700 hover:to-sky-600 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform"
-                        >
-                            Demander une démonstration
-                            <svg className="ml-2 w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                            </svg>
-                        </a>
-                    </div>
+                {/* CTA */}
+                <div className="text-center">
+                    <a
+                        href="#contact"
+                        className="inline-flex items-center px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-4 text-base sm:text-lg font-bold text-white bg-gradient-to-r from-sky-600 to-sky-500 hover:from-sky-700 hover:to-sky-600 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform"
+                    >
+                        Demander une démonstration
+                        <svg className="ml-2 w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
