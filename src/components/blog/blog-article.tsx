@@ -1,6 +1,7 @@
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import Image from "next/image"
+import Link from "next/link"
 import { BlogCta } from "./blog-cta"
 
 interface BlogArticleProps {
@@ -39,16 +40,29 @@ export const BlogArticle = ({ content }: BlogArticleProps) => {
           strong: ({ children }) => (
             <strong className="font-bold text-gray-900">{children}</strong>
           ),
-          a: ({ href, children }) => (
-            <a
-              href={href}
-              className="text-sky-600 hover:text-sky-700 underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {children}
-            </a>
-          ),
+          a: ({ href, children }) => {
+            const isInternal = href && (href.startsWith('/') || href.startsWith('#'))
+            if (isInternal) {
+              return (
+                <Link
+                  href={href}
+                  className="text-sky-600 hover:text-sky-700 underline"
+                >
+                  {children}
+                </Link>
+              )
+            }
+            return (
+              <a
+                href={href}
+                className="text-sky-600 hover:text-sky-700 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {children}
+              </a>
+            )
+          },
           img: ({ src, alt }) => (
             <span className="block my-6">
               <Image

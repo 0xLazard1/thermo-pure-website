@@ -1,30 +1,34 @@
 # THERMO PURE
 
-> THERMO PURE est une entreprise spécialisée dans le nettoyage extérieur à la vapeur basse pression à Niort (79), Deux-Sèvres, France. Nettoyage écologique de toitures, façades et terrasses sans produits chimiques. Intervention en Nouvelle-Aquitaine et départements voisins (17, 85, 86).
+> Entreprise de nettoyage extérieur à la vapeur basse pression, basée à Niort (Deux-Sèvres, 79). Nettoyage écologique de toitures, façades et terrasses sans produit chimique. Zone d'intervention : Nouvelle-Aquitaine (79, 17, 85, 86).
 
-THERMO PURE utilise exclusivement la vapeur basse pression pour nettoyer les surfaces extérieures. Cette technique est écologique (aucun produit chimique), préserve l'intégrité des matériaux (tuiles, enduit, pierre, brique, bardage) et offre un résultat durable en éliminant mousses, lichens, algues et pollution en profondeur.
+## Qui sommes-nous ?
+
+THERMO PURE est spécialisée dans le nettoyage de surfaces extérieures par vapeur basse pression. La vapeur est chauffée à 150 °C et projetée à moins de 4 bars de pression. C'est la chaleur qui élimine les mousses, lichens et algues en profondeur, sans abîmer les matériaux et sans produit chimique.
 
 - Site web : https://thermo-pure.com
-- Téléphone : +33 6 71 55 80 27
+- Téléphone : 06 71 55 80 27
 - Email : contact@thermo-pure.com
 - SIRET : 991 013 038 00013
-- Zone d'intervention : Niort, Deux-Sèvres (79), Charente-Maritime (17), Vendée (85), Vienne (86), Nouvelle-Aquitaine
+- Adresse : 60 rue François Ier, 75008 Paris
+- Zone d'intervention : Niort, Deux-Sèvres (79), Charente-Maritime (17), Vendée (85), Vienne (86)
+- Horaires : 7j/7, 8h-20h
 
 ## Services
 
-- [Nettoyage de toitures](https://thermo-pure.com/#presentation): Nettoyage à la vapeur basse pression de toitures en tuiles, ardoises et fibrociment. Élimination des mousses, lichens et dépôts sans abîmer.
-- [Nettoyage de façades](https://thermo-pure.com/#presentation): Nettoyage de façades en enduit, pierre, brique ou bardage. Suppression des taches noires et pollution.
-- [Nettoyage de terrasses et extérieurs](https://thermo-pure.com/#presentation): Nettoyage de terrasses, allées, cours, plages de piscine et espaces extérieurs.
-- [Devis gratuit](https://thermo-pure.com/#contact): Diagnostic gratuit et sans engagement. Réponse en 2h.
+- [Nettoyage de toitures](https://thermo-pure.com/#presentation): Tuiles, ardoises, fibrociment. Élimination des mousses et lichens sans karcher.
+- [Nettoyage de façades](https://thermo-pure.com/#presentation): Enduit, pierre, crépi, brique, bardage bois et métallique.
+- [Nettoyage de terrasses et extérieurs](https://thermo-pure.com/#presentation): Terrasses, allées, cours, plages de piscine.
+- [Devis gratuit](https://thermo-pure.com/#contact): Diagnostic et devis gratuits, sans engagement. Réponse sous 48 h.
 
-## Informations
+## Blog
 
-- [À propos](https://thermo-pure.com/#about): Présentation de l'entreprise et de l'équipe
-- [Exemples de réalisations](https://thermo-pure.com/#examples): Photos et vidéo avant/après de nos interventions
-- [FAQ](https://thermo-pure.com/#faq): Questions fréquentes sur la vapeur basse pression, les tarifs, la zone d'intervention
-- [Blog](https://thermo-pure.com/blog): Articles et conseils sur le nettoyage de toitures, façades et terrasses
+- [Nettoyage de toiture dans les Deux-Sèvres : méthodes et conseils](https://thermo-pure.com/blog/nettoyage-toiture-79): Comparatif karcher vs chimie vs vapeur basse pression pour le nettoyage de toiture.
+- [Nettoyage de façade dans les Deux-Sèvres : méthodes et conseils](https://thermo-pure.com/blog/nettoyage-facade-niort-79): Quelle méthode choisir pour nettoyer sa façade sans abîmer les murs.
 
-## Optional
+## Pages
 
-- [Mentions légales](https://thermo-pure.com/mentions-legales): Informations légales et RGPD
-- [Politique de confidentialité](https://thermo-pure.com/politique-confidentialite): Gestion des données personnelles et cookies
+- [Accueil](https://thermo-pure.com/): Présentation des services, réalisations avant/après, formulaire de contact.
+- [Blog](https://thermo-pure.com/blog): Articles et conseils sur le nettoyage extérieur.
+- [Mentions légales](https://thermo-pure.com/mentions-legales): Informations légales et RGPD.
+- [Politique de confidentialité](https://thermo-pure.com/politique-confidentialite): Gestion des données personnelles et cookies.

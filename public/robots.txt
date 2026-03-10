@@ -5,40 +5,33 @@
 User-agent: *
 Allow: /
 
-# Google
-User-agent: Googlebot
+# Crawlers LLM / IA — autorisés pour référencement IA
+User-agent: GPTBot
 Allow: /
 
-# Bing
-User-agent: Bingbot
+User-agent: ChatGPT-User
 Allow: /
 
-# DuckDuckGo
-User-agent: DuckDuckBot
+User-agent: PerplexityBot
 Allow: /
 
-# Yahoo
-User-agent: Slurp
+User-agent: ClaudeBot
 Allow: /
 
-
-# Qwant (France)
-User-agent: Qwantify
+User-agent: Applebot-Extended
 Allow: /
 
-# Ecosia (écologique)
-User-agent: EcosiaBot
+User-agent: cohere-ai
 Allow: /
 
-# Sitemaps
-Sitemap: https://thermo-pure.com/sitemap-index.xml
-Sitemap: https://thermo-pure.com/sitemap.xml
-Sitemap: https://thermo-pure.com/image-sitemap.xml
-Sitemap: https://thermo-pure.com/video-sitemap.xml
-
-# Limiter les bots SEO tiers
+# Limiter les bots SEO tiers (pas de blocage, juste un délai)
 User-agent: AhrefsBot
 Crawl-delay: 10
 
 User-agent: SemrushBot
 Crawl-delay: 10
+
+# Sitemaps
+Sitemap: https://thermo-pure.com/sitemap.xml
+Sitemap: https://thermo-pure.com/image-sitemap.xml
+Sitemap: https://thermo-pure.com/video-sitemap.xml
