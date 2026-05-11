@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Standalone build pour conteneurisation Docker / Coolify.
+  // Produit `.next/standalone/server.js` qui embarque tous les node_modules
+  // nécessaires au runtime, donc l'image Docker peut copier juste ce dossier
+  // + `.next/static` + `public/` sans `node_modules/` entier.
+  output: "standalone",
   images: {
     formats: ['image/avif', 'image/webp'], // AVIF en priorité, puis WebP
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],

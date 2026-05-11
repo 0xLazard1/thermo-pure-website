@@ -1,0 +1,36 @@
+# Build artifacts — Docker rebuilds these inside the image
+.next
+node_modules
+*.tsbuildinfo
+
+# Git + CI metadata — not needed in the image
+.git
+.github
+.gitignore
+.gitattributes
+
+# Secrets and local env — passed via Coolify env vars instead
+.env
+.env.local
+.env.*.local
+
+# Local-only tooling and docs
+.claude
+.vscode
+.idea
+docs
+README.md
+CLAUDE.md
+CODEBASE.md
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Build cache
+.turbo
