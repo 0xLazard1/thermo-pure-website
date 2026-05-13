@@ -43,6 +43,7 @@ No tests yet. No DB. Stateless.
 | Auto-deploy | Push `origin/main` → GitHub App `0xlazardcollify` webhook → Coolify build + restart (~5 min, ~10-30s downtime) |
 | Domains | `thermo-pure.com`, `www.thermo-pure.com` (301 → non-www), `staging.thermo-pure.com` (same container, separate domain for visual diffing) |
 | TLS | Let's Encrypt via certbot `--nginx`, auto-renew |
+| Analytics | **Available but not wired** — Plausible CE self-hosted à `https://analytics.salmaenbref.cloud` (stack Docker `/opt/plausible/` sur le VPS, géré côté SalmaEnBref). Pour brancher : ajouter le site `thermo-pure.com` dans le dashboard Plausible, coller le snippet `<script async src="…/js/pa-XXX.js">` dans le `<head>` de `app/layout.tsx`. Pas de cookie, pas de consentement requis (CNIL fiche n°16). |
 | Required env (Coolify) | `RESEND_API_KEY=re_…` (only that — the rest is hardcoded) |
 | Logs | `docker logs <container>` on the VPS, or Coolify UI → Logs tab |
 
@@ -73,6 +74,7 @@ node optimize-images.js  # batch convert public/images/* to AVIF + WebP
 - **HTTP/2 connection coalescing**: the vhost has `if ($host !~* "^(www\.)?thermo-pure\.com$") { return 421; }` — don't remove it. Brave/Chrome reuse HTTPS connections across SNIs sharing the same IP, and without the 421 a request meant for `salmaenbref.cloud` could land in this container (or vice-versa).
 - **Branch `dev` has unmerged work** including 3 new SEO landing pages (`/nettoyage-facade`, `/nettoyage-terrasse`, `/nettoyage-toiture`) and a `ServicePage` template — main currently 404s on these routes. Merge or rebase before assuming a route exists.
 - **`.dockerignore` excludes `.next/`, `node_modules/`, `.env*`, `.git/`, `docs/`, `CLAUDE.md`, `README.md`** — the build context stays under 1 MB. Don't add anything that would balloon it.
+- **Brave Shields bloque les sous-domaines `analytics.*` par défaut** (matche EasyPrivacy), même quand c'est self-hosté. Si tu branches Plausible un jour, désactiver Shields pour `thermo-pure.com` pour vérifier que le tracker fire — sinon le pageview ne part jamais et tu crois à un bug du code. Tester en navigation privée Safari/Firefox pour bypass complètement.
 
 ---
 
