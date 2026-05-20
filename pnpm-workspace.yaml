@@ -1,0 +1,7 @@
+# Autoriser explicitement les build scripts pour ces packages.
+# - sharp ship ses binaires via @img/sharp-*, le build script est un fallback inutile en pratique.
+# - unrs-resolver pareil avec @unrs/resolver-binding-*.
+# Sans ces flags, pnpm v11 affiche ERR_PNPM_IGNORED_BUILDS à chaque install.
+allowBuilds:
+  sharp: true
+  unrs-resolver: true

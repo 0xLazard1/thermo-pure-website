@@ -9,7 +9,7 @@
 | Branch | Role |
 |---|---|
 | `main` | **Production** — every push auto-deploys to `https://thermo-pure.com` via Coolify (GitHub App webhook). Keep clean. |
-| `dev` | WIP refactor (Hero/Présentation rewrite + 3 SEO landing pages: `/nettoyage-facade`, `/nettoyage-terrasse`, `/nettoyage-toiture` + `ServicePage` template + dynamic sitemap). 26 files, 1821 insertions ahead of main as of 2026-05-11. Merge to `main` to ship. |
+| `dev` | Staging — reset to `main` on 2026-05-20 (ancien WIP design jeté). Branche de validation pour la refonte design + migration pnpm. PR les feature branches ici, merge vers `main` pour ship. |
 | `claude/*` | Sandbox worktrees — never push to origin. |
 
 Always check `git status` and `git branch --show-current` before edits.
@@ -20,7 +20,7 @@ Always check `git status` and `git branch --show-current` before edits.
 
 | Layer | Choice |
 |---|---|
-| Runtime | Node 22, npm (not pnpm — `package-lock.json` is the source of truth) |
+| Runtime | Node 22, **pnpm 11** (`pnpm-lock.yaml` is the source of truth) — version pin via `packageManager` field + corepack |
 | Framework | Next.js 15.5.7 App Router, React 19.1, TypeScript |
 | Build | Turbopack (`next dev --turbopack` and `next build --turbopack`) |
 | Style | Tailwind CSS + shadcn/ui (Radix primitives, see `components.json`) |
@@ -54,12 +54,14 @@ No tests yet. No DB. Stateless.
 ## Quick commands
 
 ```bash
-npm run dev          # next dev --turbopack (port 3000)
-npm run build        # next build --turbopack
-npm run start        # next start (after build)
-npm run lint         # eslint
+pnpm dev             # next dev --turbopack (port 3000)
+pnpm build           # next build --turbopack
+pnpm start           # next start (after build)
+pnpm lint            # eslint
 node optimize-images.js  # batch convert public/images/* to AVIF + WebP
 ```
+
+Si `pnpm` n'est pas dispo : `corepack enable` (corepack ship avec Node 22, lit le champ `packageManager` du package.json et provision pnpm@11.0.8 automatiquement).
 
 `.env.local` only needs `RESEND_API_KEY=re_…` for the contact form to send. Everything else has dev-friendly defaults.
 
@@ -72,7 +74,7 @@ node optimize-images.js  # batch convert public/images/* to AVIF + WebP
 - **DKIM/SPF for Resend are on `thermo-pure.com` Hostinger DNS already** (records `resend._domainkey TXT`, `send TXT/MX`). Don't add new ones — verify in the existing zone first.
 - **nginx vhost shares the VPS with `salmaenbref.cloud`.** Editing `/etc/nginx/conf.d/thermo-pure.conf` affects only this site, but a typo could break nginx globally → both sites down. `nginx -t` before `nginx -s reload` is mandatory; if reload is silent but `nginx -T | grep ssl_certificate` shows a missing block, do `systemctl restart nginx` (full reload).
 - **HTTP/2 connection coalescing**: the vhost has `if ($host !~* "^(www\.)?thermo-pure\.com$") { return 421; }` — don't remove it. Brave/Chrome reuse HTTPS connections across SNIs sharing the same IP, and without the 421 a request meant for `salmaenbref.cloud` could land in this container (or vice-versa).
-- **Branch `dev` has unmerged work** including 3 new SEO landing pages (`/nettoyage-facade`, `/nettoyage-terrasse`, `/nettoyage-toiture`) and a `ServicePage` template — main currently 404s on these routes. Merge or rebase before assuming a route exists.
+- **`pnpm install` affiche `[ERR_PNPM_IGNORED_BUILDS]` pour `sharp` et `unrs-resolver`** — c'est **bénin** : ces deux packages ship leurs binaires natifs via des sous-packages plateforme-specific (`@img/sharp-*`, `@unrs/resolver-binding-*`). Le build script ignoré n'est qu'un fallback. Le champ `pnpm.onlyBuiltDependencies` dans `package.json` les autorise quand même au cas où. Ne pas paniquer.
 - **`.dockerignore` excludes `.next/`, `node_modules/`, `.env*`, `.git/`, `docs/`, `CLAUDE.md`, `README.md`** — the build context stays under 1 MB. Don't add anything that would balloon it.
 - **Brave Shields bloque les sous-domaines `analytics.*` par défaut** (matche EasyPrivacy), même quand c'est self-hosté. Si tu branches Plausible un jour, désactiver Shields pour `thermo-pure.com` pour vérifier que le tracker fire — sinon le pageview ne part jamais et tu crois à un bug du code. Tester en navigation privée Safari/Firefox pour bypass complètement.
 
